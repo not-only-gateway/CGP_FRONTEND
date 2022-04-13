@@ -24,19 +24,28 @@ export default function CollaboratorList(props) {
                 handleClose={() => setCurrent(undefined)}
                 obj={COLLABORATOR}
                 submit={(data) => {
+                    const dataParsed = {
+                        ...data,
+                        id: data.id.replaceAll('.', '').replaceAll('-', ''),
+                        commissioned: data.commissioned?.id,
+                        effective:  data.effective?.id,
+                        unit:  data.unit?.acronym,
+                        marital_status:  data.marital_status?.id,
+                        instruction:  data.instruction?.id,
+                        linkage: data.linkage?.id
+                    }
+                    const fD = new FormData();
+                    Object.keys(dataParsed)
+                        .forEach(k => {
+                            fD.append(k, dataParsed[k])
+                        })
+
+
                     make({
                         url: page.host + '/api/collaborator' + (Object.keys(current).length === 0 ? '' : '/' + data.id),
                         method: Object.keys(current).length === 0 ? 'POST' : 'PUT',
-                        data: {
-                            ...data,
-                            id: data.id.replaceAll('.', '').replaceAll('-', ''),
-                            commissioned: data.commissioned?.id,
-                            effective:  data.effective?.id,
-                            unit:  data.unit?.acronym,
-                            marital_status:  data.marital_status?.id,
-                            instruction:  data.instruction?.id,
-                            linkage: data.linkage?.id
-                        }
+                        data: dataParsed,
+                        headers: { "Content-Type": "multipart/form-data" }
                     }).catch()
                 }}
             />
@@ -57,7 +66,7 @@ export default function CollaboratorList(props) {
                             .then(() => hook.clean())
                             .catch()
                     }
-                }]}
+                }]} hasCardView={true}
                 hook={hook}
                 createOption={true}
                 onCreate={() => setCurrent({})}

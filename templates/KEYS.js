@@ -1,5 +1,6 @@
 export const KEYS = {
     COLLABORATOR: [
+        {key: 'image', type: 'image',  visible: true},
         {key: 'name', type: 'string', label: 'Nome', visible: true},
         {key: 'birth', type: 'date', label: 'Data de nascimento', visible: true},
 
@@ -42,8 +43,8 @@ export const KEYS = {
     UNIT: [
         {key: 'acronym', type: 'string', label: 'Acrônimo', visible: true},
         {key: 'name', type: 'string', label: 'Nome', visible: true},
-        {key: 'parent_unit', type: 'object', label: 'Unidade pai', visible: true, subfieldKey: 'acronym', subType: 'string'},
-        {key: 'root', type: 'object', label: 'Unidade raiz', visible: true, subfieldKey: 'acronym', subType: 'string'},
+        {key: 'parent_unit', type: 'object', label: 'Unidade superior', visible: true, subfieldKey: 'acronym', subType: 'string'},
+        {key: 'root', type: 'object', label: 'Raiz', visible: true, subfieldKey: 'acronym', subType: 'string'},
     ],
     SIMPLE: [
         {key: 'description', type: 'string', label: 'Descrição', visible: true},

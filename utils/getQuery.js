@@ -5,7 +5,6 @@ export default function getQuery(suffix, relations = {}, deep_relations = []) {
 
     return {
         url: page.host+ '/api/list/' + suffix,
-        headers: {'authorization': (new Cookies()).get('jwt')},
         parsePackage: pack => {
 
             let value = {...pack}

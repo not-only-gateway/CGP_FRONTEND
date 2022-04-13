@@ -28,8 +28,8 @@ export const UNIT = [{
         },
 
         {
-            label: 'Unidade pai',
-            placeHolder: 'Unidade pai',
+            label: 'Unidade superior',
+            placeHolder: 'Unidade superior',
             required: true,
             disabled: false,
             key: 'parent_unit',
@@ -39,8 +39,8 @@ export const UNIT = [{
             query: getQuery('unit')
         },
         {
-            label: 'Unidade raiz',
-            placeHolder: 'Unidade raiz',
+            label: 'Raiz',
+            placeHolder: 'Raiz',
             required: true,
             disabled: false,
             key: 'root',

@@ -974,10 +974,10 @@
   resolved "https://registry.yarnpkg.com/@f-ui/charts/-/charts-0.0.1-alpha.tgz#7188d07309f0ab5d944266bb0278fc7008f8c1a9"
   integrity sha512-Jp7sjouwgGub5Fc1W2JxOLSt5/uew4fkxolFoCMUrx9FYqt02W9HgxI4j7oQdRUfinQD7h4bVF/5uV42rcTsRA==
 
-"@f-ui/core@^0.1.38-alpha":
-  version "0.1.38-alpha"
-  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.38-alpha.tgz#ec8983e0b33fee0522b04d11e5c1dbf684d0907b"
-  integrity sha512-4xYwclaGjQWWMeEBFvDR30HTZ2BLomhVoy5n3a8Mwo/Tvs0dmsicwo6ti9ggMYQgMcWIJNAr4eHMiEsKedOdsg==
+"@f-ui/core@^0.1.39-alpha":
+  version "0.1.39-alpha"
+  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.39-alpha.tgz#38ac5db6b0f30ca0b648b54fd651b93fc86f21d2"
+  integrity sha512-xmD+MD+5YsXERTlyfRFa3henm/s7hwW4ompsJ2bYBKycXFOgVqM4kS+ysY20jgy7eUb+ubrLmi7mQ6XIwpuE+g==
   dependencies:
     prop-types "^15.7.2"
     react "17.0.2"

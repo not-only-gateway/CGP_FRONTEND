@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {Tab, VerticalTabs} from "@f-ui/core";
 import styles from '../styles/Home.module.css'
 import CollaboratorList from "../components/lists/CollaboratorList";
@@ -13,27 +13,27 @@ export default function Home() {
 
     return (
         <VerticalTabs open={open} setOpen={setOpen} className={styles.tabs}>
-            <Tab label={'Colaboradores'}  className={styles.tab}>
+            <Tab label={'Colaboradores'} group={'Colaboradores e distribuição'} className={styles.tab}>
                 <CollaboratorList/>
             </Tab>
-            <Tab label={'Distribuição de comissionados'} className={styles.tab}>
+            <Tab label={'Distribuição de comissionados'} group={'Colaboradores e distribuição'} className={styles.tab}>
                 <VacancyList/>
             </Tab>
-            <Tab label={'Unidade'} group={'Corporativo'} className={styles.tab}>
+            <Tab label={'Unidade'} group={'Relacionamentos'} className={styles.tab}>
                 <UnitList/>
             </Tab>
-            <Tab label={'Cargos Efetivos'} group={'Corporativo'} className={styles.tab}>
-                <EffectiveList />
+            <Tab label={'Cargos Efetivos'} group={'Relacionamentos'} className={styles.tab}>
+                <EffectiveList/>
             </Tab>
-            <Tab label={'Cargos comissionados'} group={'Corporativo'} className={styles.tab}>
+            <Tab label={'Cargos comissionados'} group={'Relacionamentos'} className={styles.tab}>
                 <CommissionedList/>
             </Tab>
-            <Tab label={'Estado civil'} group={'Relações'} className={styles.tab}>
+            <Tab label={'Estado civil'} group={'Tabelas de apoio'} className={styles.tab}>
                 <SimpleList title={'Estado civil'} urlPath={'marital_status'}/>
             </Tab>
-            <Tab label={'Instrução'} group={'Relações'} className={styles.tab}>
+            <Tab label={'Instrução'} group={'Tabelas de apoio'} className={styles.tab}>
                 <SimpleList title={'Instrução'} urlPath={'instruction'}/>
             </Tab>
-
-        </VerticalTabs>)
+        </VerticalTabs>
+    )
 }
