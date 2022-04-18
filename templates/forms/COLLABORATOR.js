@@ -8,6 +8,14 @@ export const COLLABORATOR = [{
     columnGap: '16px',
     inputs: [
         {
+            label: 'Imagem',
+            placeHolder: 'Imagem',
+            required: false,
+            disabled: false,
+            key: 'image',
+            type: 'image'
+        },
+        {
             label: 'CPF',
             placeHolder: 'CPF',
             required: true,
@@ -22,7 +30,7 @@ export const COLLABORATOR = [{
         {
             label: 'Matrícula',
             placeHolder: 'Matrícula',
-            required: true,
+            required: false,
             disabled: false,
             key: 'registration',
             type: 'text',
