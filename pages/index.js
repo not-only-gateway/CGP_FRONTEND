@@ -7,12 +7,27 @@ import UnitList from "../components/lists/UnitList";
 import SimpleList from "../components/lists/SimpleList";
 import CommissionedList from "../components/lists/CommissionedList";
 import EffectiveList from "../components/lists/EffectiveList";
+import {useRouter} from "next/router";
 
 export default function Home() {
     const [open, setOpen] = useState(0)
-
+    const router = useRouter()
+    useEffect(() => {
+        if (router.isReady) {
+            const i = parseInt(router.query.indexTab)
+            setOpen(i ? i : 0)
+        }
+    }, [router.isReady])
     return (
-        <VerticalTabs open={open} setOpen={setOpen} className={styles.tabs}>
+        <VerticalTabs
+            open={open}
+            setOpen={v => {
+                setOpen(v)
+                router.push({
+                    pathname: '/',
+                    query: {indexTab: v},
+                })
+            }} className={styles.tabs} headerStyles={{width: '15vw'}}>
             <Tab label={'Colaboradores'} group={'Colaboradores e distribuição'} className={styles.tab}>
                 <CollaboratorList/>
             </Tab>

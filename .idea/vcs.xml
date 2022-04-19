@@ -4,6 +4,5 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ext" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/fabric" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/ff" vcs="Git" />
   </component>
 </project>

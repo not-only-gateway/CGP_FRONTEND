@@ -4,9 +4,11 @@ import Wrapper from "../ext/wrapper/Wrapper";
 
 function MyApp({Component, pageProps}) {
 
-
     return (
         <Wrapper
+            titles={{
+                '/': 'SIS-AEB'
+            }}
             host={page.auth_host}
             pages={[{label: 'Início', path: '/', requireAuth: true}]}
         >

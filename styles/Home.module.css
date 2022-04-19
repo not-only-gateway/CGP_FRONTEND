@@ -94,6 +94,7 @@ width: 100%;
 .tab{
     display: grid;
     max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
 
 
