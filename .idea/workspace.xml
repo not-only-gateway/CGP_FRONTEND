@@ -6,6 +6,31 @@
   <component name="ChangeListManager">
     <list default="true" id="859d803a-e89d-4b4a-a6d4-d7ebb6120f73" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lists/CollaboratorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/lists/CollaboratorList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lists/CommissionedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/lists/CommissionedList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lists/EffectiveList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/lists/EffectiveList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lists/SimpleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/lists/SimpleList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lists/UnitList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/lists/UnitList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lists/VacancyList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/lists/VacancyList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext" beforeDir="false" afterPath="$PROJECT_DIR$/ext" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/Filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/filter/Filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/hooks/useFilters.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/filter/hooks/useFilters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/styles/Field.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/filter/styles/Field.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/templates/Field.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/filter/components/Field.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/list/List.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/list/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/components/Sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/filter/components/Sort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/components/SortField.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/filter/components/SortField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/styles/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/list/styles/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/styles/Row.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/list/styles/Row.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fabric/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/KEYS.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/KEYS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/forms/COLLABORATOR.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms/COLLABORATOR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/forms/SIMPLE.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms/SIMPLE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -40,7 +65,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\pages" />
+      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\public" />
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\c" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\ext\filter\templates" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -52,7 +82,8 @@
       <option name="presentableId" value="Default" />
       <updated>1650291983544</updated>
       <workItem from="1650291985998" duration="1409000" />
-      <workItem from="1650367102243" duration="9881000" />
+      <workItem from="1650367102243" duration="13157000" />
+      <workItem from="1650451652575" duration="6952000" />
     </task>
     <servers />
   </component>

@@ -20,7 +20,10 @@ export default function EffectiveList(props) {
             <FormTemplate
                 title={'Cargo efetivo'}
                 initial={current}
-                handleClose={() => setCurrent(undefined)}
+                handleClose={() => {
+                    hook.clean()
+                    setCurrent(undefined)
+                }}
                 obj={EFFECTIVE}
                 submit={(data) => {
                     make({

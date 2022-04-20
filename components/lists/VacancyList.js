@@ -20,7 +20,10 @@ export default function VacancyList(props) {
             <FormTemplate
                 title={'Distribuição de comissionado'}
                 initial={current}
-                handleClose={() => setCurrent(undefined)}
+                handleClose={() => {
+                    hook.clean()
+                    setCurrent(undefined)
+                }}
                 obj={VACANCY}
                 submit={(data) => {
                     make({

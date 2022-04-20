@@ -25,7 +25,10 @@ export default function CollaboratorList(props) {
                 title={'Colaborador'}
                 initial={current}
                 create={!current?.id}
-                handleClose={() => setCurrent(undefined)}
+                handleClose={() => {
+                    hook.clean()
+                    setCurrent(undefined)
+                }}
                 obj={COLLABORATOR}
                 submit={(data) => {
                     const id = current ? current.id.replaceAll('.', '').replaceAll('-', '') : data.id
@@ -38,7 +41,9 @@ export default function CollaboratorList(props) {
                         unit: data.unit?.acronym,
                         marital_status: data.marital_status?.id,
                         instruction: data.instruction?.id,
-                        linkage: data.linkage?.id
+                        linkage: data.linkage?.id,
+
+
                     }
 
                     make({
@@ -51,7 +56,7 @@ export default function CollaboratorList(props) {
             <List
                 mapKeyOnNull={{
                     key: 'image',
-                    value: () => './light.png'
+                    value: (v) => v.gender === 'Masculino' ? './male.svg' : './female.svg'
                 }}
                 options={[{
                     label: 'Deletar',
@@ -61,7 +66,6 @@ export default function CollaboratorList(props) {
 
                     icon: <span className={'material-icons-round'}>delete_forever</span>,
                     onClick: (e) => {
-                        console.log(e)
                         make({
                             url: page.host + '/api/collaborator/' + e.id,
                             method: 'delete'

@@ -20,16 +20,16 @@ export default function SimpleList(props) {
             <FormTemplate
                 title={props.title}
                 initial={current}
-                handleClose={() => setCurrent(undefined)}
+                handleClose={() => {
+                    hook.clean()
+                    setCurrent(undefined)
+                }}
                 obj={SIMPLE}
                 submit={(data) => {
                     make({
-                        url: page.host + '/api/'+props.urlPath + (Object.keys(current).length === 0 ? '' : '/' + props.data.id),
+                        url: page.host + '/api/'+props.urlPath + (Object.keys(current).length === 0 ? '' : '/' + data.id),
                         method: Object.keys(current).length === 0 ? 'POST' : 'PUT',
-                        data: {
-                            ...data,
-                            id: data.id.replaceAll('.', '').replaceAll('-', '')
-                        }
+                        data
                     }).catch()
                 }}
             />
@@ -42,7 +42,7 @@ export default function SimpleList(props) {
 
                     icon: <span className={'material-icons-round'}>delete_forever</span>,
                     onClick: (e) => {
-                        console.log(e)
+
                         make({
                             url: page.host + '/api/'+props.urlPath + '/' + e.id,
                             method: 'delete'

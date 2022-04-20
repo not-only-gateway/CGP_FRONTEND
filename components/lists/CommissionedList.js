@@ -21,7 +21,10 @@ export default function CommissionedList(props) {
             <FormTemplate
                 title={'Cargo comissionado'}
                 initial={current}
-                handleClose={() => setCurrent(undefined)}
+                handleClose={() => {
+                    hook.clean()
+                    setCurrent(undefined)
+                }}
                 obj={COMMISSIONED}
                 submit={(data) => {
                     make({

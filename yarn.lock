@@ -974,10 +974,10 @@
   resolved "https://registry.yarnpkg.com/@f-ui/charts/-/charts-0.0.1-alpha.tgz#7188d07309f0ab5d944266bb0278fc7008f8c1a9"
   integrity sha512-Jp7sjouwgGub5Fc1W2JxOLSt5/uew4fkxolFoCMUrx9FYqt02W9HgxI4j7oQdRUfinQD7h4bVF/5uV42rcTsRA==
 
-"@f-ui/core@^0.1.41-alpha":
-  version "0.1.41-alpha"
-  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.41-alpha.tgz#aa28dba6451a39d15037b6c2741d9a576eac88b9"
-  integrity sha512-llkwvZ0u2h2D4Hy0nyy+U7Lw8RZ6w2Gb5e6TWUx3sAX6bGj7fFUe29v/zzgWslH1dI3rtESh2tFvxvtwtT8Reg==
+"@f-ui/core@^0.1.42-alpha":
+  version "0.1.42-alpha"
+  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.42-alpha.tgz#9e0fd8e5c7d6f8d81e3591a51016ad3d1bcec3b9"
+  integrity sha512-fXZL/orGJF8y2Q2PBqg/8VP7FRMgcTddf9xMf6J66vHI5x1ycU9mIyzJNJBC6erGF3aPOZwKt8N/Xu7Ta+++EQ==
   dependencies:
     prop-types "^15.7.2"
     react "17.0.2"
@@ -3170,6 +3170,11 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
+
+uuid@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 v8-compile-cache@^2.0.3:
   version "2.3.0"

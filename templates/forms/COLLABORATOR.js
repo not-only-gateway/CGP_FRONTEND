@@ -70,6 +70,9 @@ export const COLLABORATOR = [{
             disabled: false,
             key: 'birth',
             type: 'date',
+            customProps: {
+                hoursOffset: 4
+            },
             width: '100%',
         },
         {
@@ -116,6 +119,9 @@ export const COLLABORATOR = [{
             disabled: false,
             key: 'admission',
             type: 'date',
+            customProps: {
+                hoursOffset: 4
+                },
             width: '100%',
         },
         {
@@ -125,6 +131,9 @@ export const COLLABORATOR = [{
             disabled: false,
             key: 'resignation',
             type: 'date',
+            customProps: {
+                hoursOffset: 4
+            },
             width: '100%',
         },
         {

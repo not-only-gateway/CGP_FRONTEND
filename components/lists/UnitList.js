@@ -20,15 +20,19 @@ export default function UnitList(props) {
             <FormTemplate
                 title={'Unidade'}
                 initial={current}
-                handleClose={() => setCurrent(undefined)}
+                handleClose={() => {
+                    hook.clean()
+                    setCurrent(undefined)
+                }}
                 obj={UNIT}
                 submit={(data) => {
                     make({
-                        url: page.host + '/api/unit' + (Object.keys(current).length === 0 ? '' : '/' + props.data.id),
+                        url: page.host + '/api/unit' + (Object.keys(current).length === 0 ? '' : '/' + data.acronym),
                         method: Object.keys(current).length === 0 ? 'POST' : 'PUT',
                         data: {
                             ...data,
-                            id: data.id.replaceAll('.', '').replaceAll('-', '')
+                            parent_unit: data.parent_unit?.acronym,
+                            root: data.root?.acronym
                         }
                     }).catch()
                 }}

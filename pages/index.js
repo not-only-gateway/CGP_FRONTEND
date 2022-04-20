@@ -27,7 +27,7 @@ export default function Home() {
                     pathname: '/',
                     query: {indexTab: v},
                 })
-            }} className={styles.tabs} headerStyles={{width: '15vw'}}>
+            }} className={styles.tabs}>
             <Tab label={'Colaboradores'} group={'Colaboradores e distribuição'} className={styles.tab}>
                 <CollaboratorList/>
             </Tab>
