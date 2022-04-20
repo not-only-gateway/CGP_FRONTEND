@@ -13,7 +13,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@f-ui/charts": "^0.0.1-alpha",
-    "@f-ui/core": "^0.1.42-alpha",
+    "@f-ui/core": "^0.1.43-alpha",
     "axios": "^0.26.1",
     "express": "^4.17.3",
     "invariant": "^2.2.4",
