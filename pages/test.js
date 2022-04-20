@@ -1,13 +1,5 @@
-import React, {useEffect, useState} from 'react'
-import {Accordion, AccordionSummary, Dropdown, DropdownOption, DropdownOptions, Tab, VerticalTabs} from "../fabric/src/index";
-import styles from '../styles/Home.module.css'
-import CollaboratorList from "../components/lists/CollaboratorList";
-import VacancyList from "../components/lists/VacancyList";
-import UnitList from "../components/lists/UnitList";
-import SimpleList from "../components/lists/SimpleList";
-import CommissionedList from "../components/lists/CommissionedList";
-import EffectiveList from "../components/lists/EffectiveList";
-import {useRouter} from "next/router";
+import React from 'react'
+import {Accordion, AccordionSummary, Dropdown, DropdownOption, DropdownOptions} from "../fabric/src/index";
 
 export default function Test() {
     const o = {

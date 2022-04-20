@@ -1,4 +1,3 @@
-import Cookies from "universal-cookie/lib";
 import page from '../public/page.json'
 
 export default function getQuery(suffix, relations = {}, deep_relations = []) {

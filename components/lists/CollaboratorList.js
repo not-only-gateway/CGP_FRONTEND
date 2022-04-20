@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
 import {Switcher} from "@f-ui/core";
 import useQuery from "../../ext/hooks/useQuery";
@@ -11,7 +11,6 @@ import FormTemplate from "../../ext/FormTemplate";
 import {COLLABORATOR} from "../../templates/forms/COLLABORATOR";
 import page from "../../public/page.json";
 import useRequest from "../../ext/hooks/useRequest";
-import env from "../../.env";
 import SOLIDES from "../../utils/SOLIDES";
 
 export default function CollaboratorList(props) {
