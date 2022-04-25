@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import PropTypes from "prop-types";
 import {Switcher} from "@f-ui/core";
 import useQuery from "../../ext/hooks/useQuery";
@@ -15,7 +15,7 @@ import SOLIDES from "../../utils/SOLIDES";
 
 export default function CollaboratorList(props) {
     const [current, setCurrent] = useState()
-    const hook = useQuery(getQuery('collaborator'))
+    const hook = useQuery(getQuery('collaborator'), [{asc: true, desc: false, key: 'name'}])
     const {make, setShowSuccess} = useRequest(false)
 
     return (
@@ -72,7 +72,8 @@ export default function CollaboratorList(props) {
                             .then(() => hook.clean())
                             .catch()
                     }
-                }]} hasCardView={true}
+                }]}
+                hasCardView={true}
                 hook={hook}
                 createOption={true}
                 onCreate={() => setCurrent({})}

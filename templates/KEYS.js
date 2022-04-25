@@ -23,7 +23,20 @@ const unit = [{key: 'acronym', type: 'string', label: 'Acrônimo', visible: true
     label: 'Regime',
     visible: true
 },]
+const collab = [{key: 'name', type: 'string', label: 'Nome', visible: true},
 
+
+    // {key: 'registration', type: 'string', label: 'Matricula', visible: false},
+    // {key: 'email', type: 'string', label: 'Email', visible: true},
+
+    {
+        key: 'unit',
+        type: 'object',
+        subfieldKey: 'acronym',
+        label: 'Unidade',
+        visible: true,
+        query: {...getQuery('unit'), keys: unit, primaryKey: 'acronym'}
+    }]
 export const KEYS = {
 
     COMMISSIONED: comiss,
@@ -35,7 +48,7 @@ export const KEYS = {
         visible: true,
         subfieldKey: 'name',
         subType: 'string',
-        query: {...getQuery('comissioned'), keys: comiss, primaryKey: 'id'}
+        query: {...getQuery('commissioned'), keys: comiss, primaryKey: 'id'}
     }, {
         key: 'unit',
         type: 'object',
@@ -50,22 +63,24 @@ export const KEYS = {
         label: 'Titular',
         visible: true,
         subfieldKey: 'name',
-        query: {...getQuery('collaborator'), keys: unit, primaryKey: 'id'}
+        query: {...getQuery('collaborator'), keys: collab, primaryKey: 'id'}
     }, {
         key: 'substitute',
         type: 'object',
         label: 'Substituto',
         visible: true,
         subfieldKey: 'name',
-        query: {...getQuery('collaborator'), keys: unit, primaryKey: 'id'}
+        query: {...getQuery('collaborator'), keys: collab, primaryKey: 'id'}
     },
 
-        {key: 'nomef', type: 'string', label: 'Nome função', visible: true}, {
+        {key: 'nomef', type: 'string', label: 'Nome feminino', visible: false},
+        {
             key: 'nomem',
             type: 'string',
-            label: 'Nome M',
-            visible: true
-        }, {key: 'cargoc', type: 'string', label: 'Cargo comissionado', visible: true},],
+            label: 'Nome masculino',
+            visible: false
+        },
+        {key: 'cargoc', type: 'string', label: 'Cargo comissionado', visible: false},],
 
     UNIT: [...unit, {
         key: 'parent_unit',
@@ -84,27 +99,7 @@ export const KEYS = {
     },],
     SIMPLE: [{key: 'description', type: 'string', label: 'Descrição', visible: true},],
 
-    COLLABORATOR_SIMPLE: [{key: 'name', type: 'string', label: 'Nome', visible: true},
-
-
-        {key: 'registration', type: 'string', label: 'Matricula', visible: false}, {
-            key: 'superior',
-            type: 'string',
-            label: 'Superior',
-            visible: false
-        },
-
-
-        {key: 'email', type: 'string', label: 'Email', visible: true},
-
-        {
-            key: 'unit',
-            type: 'object',
-            subfieldKey: 'acronym',
-            label: 'Unidade',
-            visible: true,
-            query: {...getQuery('unit'), keys: unit, primaryKey: 'acronym'}
-        }],
+    COLLABORATOR_SIMPLE: collab,
     COLLABORATOR: [{key: 'image', type: 'image', visible: true}, {
         key: 'name',
         type: 'string',
