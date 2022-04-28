@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import {Tab, VerticalTabs} from "@f-ui/core";
 import styles from '../styles/Home.module.css'
-import CollaboratorList from "../components/lists/CollaboratorList";
-import VacancyList from "../components/lists/VacancyList";
-import UnitList from "../components/lists/UnitList";
-import SimpleList from "../components/lists/SimpleList";
-import CommissionedList from "../components/lists/CommissionedList";
-import EffectiveList from "../components/lists/EffectiveList";
+import CollaboratorList from "../components/CollaboratorList";
+import VacancyList from "../components/VacancyList";
+import UnitList from "../components/UnitList";
+import SimpleList from "../components/SimpleList";
+import CommissionedList from "../components/CommissionedList";
+import EffectiveList from "../components/EffectiveList";
 import {useRouter} from "next/router";
 
 export default function Home() {

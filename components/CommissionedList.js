@@ -1,34 +1,35 @@
 import React, {useState} from "react";
 import PropTypes from "prop-types";
 import {Switcher} from "@f-ui/core";
-import useQuery from "../../ext/hooks/useQuery";
-import getQuery from "../../utils/getQuery";
-import styles from "../../styles/Home.module.css";
-import List from "../../ext/list/List";
-import {KEYS} from "../../templates/KEYS";
-import FormTemplate from "../../ext/FormTemplate";
-import page from "../../public/page.json";
-import {SIMPLE} from "../../templates/forms/SIMPLE";
-import useRequest from "../../ext/hooks/useRequest";
+import useQuery from "../ext/hooks/useQuery";
+import getQuery from "../utils/getQuery";
+import styles from "../styles/Home.module.css";
+import List from "../ext/list/List";
+import {KEYS} from "../templates/KEYS";
+import FormTemplate from "../ext/FormTemplate";
+import page from "../public/page.json";
+import {COMMISSIONED} from "../templates/forms/COMMISSIONED";
+import useRequest from "../ext/hooks/useRequest";
 
-export default function SimpleList(props) {
+export default function CommissionedList(props) {
     const [current, setCurrent] = useState()
-    const hook = useQuery(getQuery(props.urlPath))
+
+    const hook = useQuery(getQuery('commissioned'))
     const {make} = useRequest(true)
     return (
         <Switcher openChild={current ? 0 : 1} className={styles.wrapper}>
             <FormTemplate
-                title={props.title}
+                title={'Cargo comissionado'}
                 initial={current}
                 handleClose={() => {
                     hook.clean()
                     setCurrent(undefined)
                 }}
-                obj={SIMPLE}
+                obj={COMMISSIONED}
                 submit={(data) => {
                     make({
-                        url: page.host + '/api/'+props.urlPath + (Object.keys(current).length === 0 ? '' : '/' + data.id),
-                        method: Object.keys(current).length === 0 ? 'POST' : 'PUT',
+                        url: page.host + '/api/commissioned' + '/' + props.data.id,
+                        method:  'PUT',
                         data
                     }).catch()
                 }}
@@ -42,9 +43,9 @@ export default function SimpleList(props) {
 
                     icon: <span className={'material-icons-round'}>delete_forever</span>,
                     onClick: (e) => {
-
+                        console.log(e)
                         make({
-                            url: page.host + '/api/'+props.urlPath + '/' + e.id,
+                            url: page.host + '/api/commissioned/' + e.id,
                             method: 'delete'
                         })
                             .then(() => hook.clean())
@@ -52,18 +53,16 @@ export default function SimpleList(props) {
                     }
                 }]}
                 hook={hook}
-                createOption={true}
-                onCreate={() => setCurrent({})}
-                keys={KEYS.SIMPLE}
+
+                keys={KEYS.COMMISSIONED}
                 onRowClick={e => setCurrent(e)}
-                title={props.title}
-           />
+                title={'Cargos comissionados'}
+            />
         </Switcher>)
+
 }
 
-SimpleList.propTypes = {
-    title: PropTypes.string,
-    urlPath: PropTypes.string.isRequired,
+CommissionedList.propTypes = {
     handleClose: PropTypes.func,
     create: PropTypes.bool,
     data: PropTypes.object

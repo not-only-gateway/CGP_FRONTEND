@@ -974,11 +974,33 @@
   resolved "https://registry.yarnpkg.com/@f-ui/charts/-/charts-0.0.1-alpha.tgz#7188d07309f0ab5d944266bb0278fc7008f8c1a9"
   integrity sha512-Jp7sjouwgGub5Fc1W2JxOLSt5/uew4fkxolFoCMUrx9FYqt02W9HgxI4j7oQdRUfinQD7h4bVF/5uV42rcTsRA==
 
-"@f-ui/core@^0.1.46-alpha":
-  version "0.1.45-alpha"
-  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.45-alpha.tgz#10344bd8508db7ef431e36741a9ab73acd7179fc"
-  integrity sha512-GYXSxZhcvtcVgq5LJvyeJOpuidtriOrtVQGhkEEfaSE7XA8e6f/8S8GGHTN7Ye3ARKy7M4rED3zDeCZJYVNiZg==
+"@f-ui/core@0.1.47-alpha":
+  version "0.1.47-alpha"
+  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.47-alpha.tgz#510573a814d620da537f483fc8126456bc10ecbb"
+  integrity sha512-qhhAAuG0RM0Rh6763rQcGIcejhaX1jfwM9TbRztAQ2Az0aP9rGKERN83S4jHKbRtIW9SwRONKyyodRq4qTN4lQ==
   dependencies:
+    prop-types "^15.7.2"
+    react "17.0.2"
+    react-dom "17.0.2"
+    react-imask "^6.4.2"
+
+"@f-ui/core@^0.1.49-alpha":
+  version "0.1.49-alpha"
+  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.49-alpha.tgz#e1af32b042eea079bd37e0261b6c9c342de86649"
+  integrity sha512-HVXCBuXGoV+5XHeMpbxaLMTA8XtBZqTTuuiSB/A1ysaBRwqjEoeifL1hM4wJLL3WgDB34kWBZe64tADNhzp3og==
+  dependencies:
+    prop-types "^15.7.2"
+    react "17.0.2"
+    react-dom "17.0.2"
+    react-imask "^6.4.2"
+
+"@f-ui/query@^0.0.1-alpha":
+  version "0.0.1-alpha"
+  resolved "https://registry.yarnpkg.com/@f-ui/query/-/query-0.0.1-alpha.tgz#d059122e41557c38f47383f01d387156e5f1ed62"
+  integrity sha512-RfXkXWf87TkVxTD1ASJHxbc/rexyjYNMobo/E9bbB9Lsali5F18hixJy9ohshvzCBA52nKzieQmU8ZptVHQD7A==
+  dependencies:
+    "@f-ui/core" "0.1.47-alpha"
+    axios "^0.26.1"
     prop-types "^15.7.2"
     react "17.0.2"
     react-dom "17.0.2"

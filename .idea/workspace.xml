@@ -5,18 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="859d803a-e89d-4b4a-a6d4-d7ebb6120f73" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ext/filter/components/CellHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/lists/CollaboratorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/lists/CollaboratorList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/filter/components/Sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/filter/components/Sort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/filter/components/SortField.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/filter/components/SortField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lists/CollaboratorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CollaboratorList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lists/CommissionedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CommissionedList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lists/EffectiveList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EffectiveList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lists/SimpleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SimpleList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lists/UnitList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UnitList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lists/VacancyList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/VacancyList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext" beforeDir="false" afterPath="$PROJECT_DIR$/ext" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/Filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/filter/Filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/components/Sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/filter/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/components/SortField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/hooks/useFilters.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/filter/hooks/useFilters.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/hooks/useQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/hooks/useQuery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/ListTabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/list/ListTabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/styles/Tabs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/list/styles/Tabs.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/styles/Row.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/list/styles/Row.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/selector/Selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/selector/Selector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/selector/modules/SelectorModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/selector/modules/SelectorModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/selector/styles/Selector.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/selector/styles/Selector.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/selector/styles/SelectorModal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/selector/styles/SelectorModal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/f/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/f/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f/src/visualization/row/components/RowKey.js" beforeDir="false" afterPath="$PROJECT_DIR$/f/src/visualization/row/components/RowKey.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/KEYS.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/KEYS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/test.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +39,24 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ext" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,20 +74,27 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="advanced.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\pages" />
+      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\git\markdown\component" />
+      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\git\issues\styles" />
+      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\f\src" />
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\public" />
-      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\git\issues" />
+      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\github" />
+      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\components" />
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\ext\filter\templates" />
     </key>
   </component>
@@ -70,7 +108,13 @@
       <updated>1650291983544</updated>
       <workItem from="1650291985998" duration="1409000" />
       <workItem from="1650367102243" duration="13157000" />
-      <workItem from="1650451652575" duration="15783000" />
+      <workItem from="1650451652575" duration="15862000" />
+      <workItem from="1650898756749" duration="1346000" />
+      <workItem from="1650970580969" duration="17000" />
+      <workItem from="1650984069973" duration="1640000" />
+      <workItem from="1651056644229" duration="17687000" />
+      <workItem from="1651144420062" duration="519000" />
+      <workItem from="1651145072197" duration="7559000" />
     </task>
     <servers />
   </component>

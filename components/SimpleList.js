@@ -1,39 +1,35 @@
 import React, {useState} from "react";
 import PropTypes from "prop-types";
 import {Switcher} from "@f-ui/core";
-import useQuery from "../../ext/hooks/useQuery";
-import getQuery from "../../utils/getQuery";
-import {KEYS} from "../../templates/KEYS";
-import styles from "../../styles/Home.module.css";
-import List from "../../ext/list/List";
-import FormTemplate from "../../ext/FormTemplate";
-import {UNIT} from "../../templates/forms/UNIT";
-import page from "../../public/page.json";
-import useRequest from "../../ext/hooks/useRequest";
+import useQuery from "../ext/hooks/useQuery";
+import getQuery from "../utils/getQuery";
+import styles from "../styles/Home.module.css";
+import List from "../ext/list/List";
+import {KEYS} from "../templates/KEYS";
+import FormTemplate from "../ext/FormTemplate";
+import page from "../public/page.json";
+import {SIMPLE} from "../templates/forms/SIMPLE";
+import useRequest from "../ext/hooks/useRequest";
 
-export default function UnitList(props) {
+export default function SimpleList(props) {
     const [current, setCurrent] = useState()
-    const hook = useQuery(getQuery('unit'))
+    const hook = useQuery(getQuery(props.urlPath))
     const {make} = useRequest(true)
     return (
         <Switcher openChild={current ? 0 : 1} className={styles.wrapper}>
             <FormTemplate
-                title={'Unidade'}
+                title={props.title}
                 initial={current}
                 handleClose={() => {
                     hook.clean()
                     setCurrent(undefined)
                 }}
-                obj={UNIT}
+                obj={SIMPLE}
                 submit={(data) => {
                     make({
-                        url: page.host + '/api/unit' + (Object.keys(current).length === 0 ? '' : '/' + data.acronym),
+                        url: page.host + '/api/'+props.urlPath + (Object.keys(current).length === 0 ? '' : '/' + data.id),
                         method: Object.keys(current).length === 0 ? 'POST' : 'PUT',
-                        data: {
-                            ...data,
-                            parent_unit: data.parent_unit?.acronym,
-                            root: data.root?.acronym
-                        }
+                        data
                     }).catch()
                 }}
             />
@@ -46,9 +42,9 @@ export default function UnitList(props) {
 
                     icon: <span className={'material-icons-round'}>delete_forever</span>,
                     onClick: (e) => {
-                        console.log(e)
+
                         make({
-                            url: page.host + '/api/unit/' + e.id,
+                            url: page.host + '/api/'+props.urlPath + '/' + e.id,
                             method: 'delete'
                         })
                             .then(() => hook.clean())
@@ -58,16 +54,16 @@ export default function UnitList(props) {
                 hook={hook}
                 createOption={true}
                 onCreate={() => setCurrent({})}
-                keys={KEYS.UNIT}
+                keys={KEYS.SIMPLE}
                 onRowClick={e => setCurrent(e)}
-                title={'Unidades'}
-            />
-
+                title={props.title}
+           />
         </Switcher>)
-
 }
 
-UnitList.propTypes = {
+SimpleList.propTypes = {
+    title: PropTypes.string,
+    urlPath: PropTypes.string.isRequired,
     handleClose: PropTypes.func,
     create: PropTypes.bool,
     data: PropTypes.object

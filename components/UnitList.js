@@ -1,35 +1,39 @@
 import React, {useState} from "react";
 import PropTypes from "prop-types";
 import {Switcher} from "@f-ui/core";
-import useQuery from "../../ext/hooks/useQuery";
-import getQuery from "../../utils/getQuery";
-import {KEYS} from "../../templates/KEYS";
-import styles from "../../styles/Home.module.css";
-import List from "../../ext/list/List";
-import FormTemplate from "../../ext/FormTemplate";
-import {VACANCY} from "../../templates/forms/VACANCY";
-import page from "../../public/page.json";
-import useRequest from "../../ext/hooks/useRequest";
+import useQuery from "../ext/hooks/useQuery";
+import getQuery from "../utils/getQuery";
+import {KEYS} from "../templates/KEYS";
+import styles from "../styles/Home.module.css";
+import List from "../ext/list/List";
+import FormTemplate from "../ext/FormTemplate";
+import {UNIT} from "../templates/forms/UNIT";
+import page from "../public/page.json";
+import useRequest from "../ext/hooks/useRequest";
 
-export default function VacancyList(props) {
+export default function UnitList(props) {
     const [current, setCurrent] = useState()
-    const hook = useQuery(getQuery('vacancy'))
+    const hook = useQuery(getQuery('unit'))
     const {make} = useRequest(true)
     return (
         <Switcher openChild={current ? 0 : 1} className={styles.wrapper}>
             <FormTemplate
-                title={'Distribuição de comissionado'}
+                title={'Unidade'}
                 initial={current}
                 handleClose={() => {
                     hook.clean()
                     setCurrent(undefined)
                 }}
-                obj={VACANCY}
+                obj={UNIT}
                 submit={(data) => {
                     make({
-                        url: page.host + '/api/vacancy' +'/' + props.data.id,
-                        method: 'PUT',
-                        data
+                        url: page.host + '/api/unit' + (Object.keys(current).length === 0 ? '' : '/' + data.acronym),
+                        method: Object.keys(current).length === 0 ? 'POST' : 'PUT',
+                        data: {
+                            ...data,
+                            parent_unit: data.parent_unit?.acronym,
+                            root: data.root?.acronym
+                        }
                     }).catch()
                 }}
             />
@@ -42,9 +46,9 @@ export default function VacancyList(props) {
 
                     icon: <span className={'material-icons-round'}>delete_forever</span>,
                     onClick: (e) => {
-
+                        console.log(e)
                         make({
-                            url: page.host + '/api/vacancy/' + e.id,
+                            url: page.host + '/api/unit/' + e.id,
                             method: 'delete'
                         })
                             .then(() => hook.clean())
@@ -52,16 +56,18 @@ export default function VacancyList(props) {
                     }
                 }]}
                 hook={hook}
-
-                keys={KEYS.VACANCY}
+                createOption={true}
+                onCreate={() => setCurrent({})}
+                keys={KEYS.UNIT}
                 onRowClick={e => setCurrent(e)}
-                title={'Distribuição de comissionados'}
+                title={'Unidades'}
             />
+
         </Switcher>)
 
 }
 
-VacancyList.propTypes = {
+UnitList.propTypes = {
     handleClose: PropTypes.func,
     create: PropTypes.bool,
     data: PropTypes.object

@@ -1,15 +1,15 @@
 import React, {useState} from "react";
 import PropTypes from "prop-types";
 import {Switcher} from "@f-ui/core";
-import useQuery from "../../ext/hooks/useQuery";
-import getQuery from "../../utils/getQuery";
-import styles from "../../styles/Home.module.css";
-import List from "../../ext/list/List";
-import {KEYS} from "../../templates/KEYS";
-import FormTemplate from "../../ext/FormTemplate";
-import page from "../../public/page.json";
-import {EFFECTIVE} from "../../templates/forms/EFFECTIVE";
-import useRequest from "../../ext/hooks/useRequest";
+import useQuery from "../ext/hooks/useQuery";
+import getQuery from "../utils/getQuery";
+import styles from "../styles/Home.module.css";
+import List from "../ext/list/List";
+import {KEYS} from "../templates/KEYS";
+import FormTemplate from "../ext/FormTemplate";
+import page from "../public/page.json";
+import {EFFECTIVE} from "../templates/forms/EFFECTIVE";
+import useRequest from "../ext/hooks/useRequest";
 
 export default function EffectiveList(props) {
     const [current, setCurrent] = useState()
