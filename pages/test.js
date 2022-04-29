@@ -1,5 +1,5 @@
 import React from 'react'
-import {Accordion, AccordionSummary, Dropdown, DropdownOption, DropdownOptions} from "@f-ui/core";
+import {Dropdown, DropdownOption, DropdownOptions} from "@f-ui/core";
 
 export default function Test() {
     const o = {

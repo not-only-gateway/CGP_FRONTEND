@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
 import {Switcher} from "@f-ui/core";
 import useQuery from "../ext/hooks/useQuery";

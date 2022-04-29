@@ -13,11 +13,31 @@ export default function Home() {
     const [open, setOpen] = useState(0)
     const router = useRouter()
     useEffect(() => {
+        // const stateVariables = [{key: 'cafe', value: 1}]
+        // const executionLines = [{key: 'test', value: `console.log(this.state`}]
+        // const template = class {
+        //     constructor(state) {
+        //         state.forEach(s => {
+        //             this[s.key] = s.value
+        //         })
+        //     }
+        // }
+        //
+        // const instance = new template(stateVariables)
+        // executionLines.forEach(e => {
+        //     const inst = new Function('data', e.value)
+        //     instance[e.key] = inst()
+        // })
+        //
+        // instance.test()
+
+     
         if (router.isReady) {
             const i = parseInt(router.query.indexTab)
             setOpen(i ? i : 0)
         }
     }, [router.isReady])
+
     return (
         <VerticalTabs
             open={open}

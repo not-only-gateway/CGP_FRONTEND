@@ -984,10 +984,10 @@
     react-dom "17.0.2"
     react-imask "^6.4.2"
 
-"@f-ui/core@^0.1.49-alpha":
-  version "0.1.49-alpha"
-  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.49-alpha.tgz#e1af32b042eea079bd37e0261b6c9c342de86649"
-  integrity sha512-HVXCBuXGoV+5XHeMpbxaLMTA8XtBZqTTuuiSB/A1ysaBRwqjEoeifL1hM4wJLL3WgDB34kWBZe64tADNhzp3og==
+"@f-ui/core@^0.1.50-alpha":
+  version "0.1.50-alpha"
+  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.50-alpha.tgz#ec4ddac418475edc82db4eab8c693732dd738c9c"
+  integrity sha512-GRZllPBk9Yo9PgTFWcDS/ndqvU//RfsLWSqVIsywcFyHW1z6PWgTWFErjnzhyGp5myaIDvSawiXYmNxqBfXwPA==
   dependencies:
     prop-types "^15.7.2"
     react "17.0.2"
