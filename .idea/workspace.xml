@@ -13,49 +13,9 @@
       <change beforePath="$PROJECT_DIR$/components/SimpleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SimpleList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/UnitList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UnitList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/VacancyList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/VacancyList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/FormTemplate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ext/FormTemplate.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/avatar/Avatar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/avatar/AvatarInput.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/avatar/styles/Avatar.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/filter/Filter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/filter/components/CellHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/filter/components/Field.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/filter/components/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/filter/hooks/useFilters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/filter/styles/Field.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/filter/styles/Filters.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/hooks/deps/dataActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/hooks/deps/dataReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/hooks/useField.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/hooks/useQuery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/hooks/useRequest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/List.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/ListTabs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/components/Element.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/components/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/components/Settings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/components/SettingsField.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/components/Validate.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/hook/useHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/hook/useList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/styles/Element.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/styles/Header.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/styles/List.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/styles/Row.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/styles/Settings.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/styles/Tabs.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/styles/Validate.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/templates/keyTemplate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/selector/Selector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/selector/modules/SelectorModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/selector/styles/Selector.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/selector/styles/SelectorModal.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/selector/styles/Shared.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/wrapper/components/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/components/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/wrapper/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/components/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext" beforeDir="false" afterPath="$PROJECT_DIR$/ext" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/avatar/AvatarInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ext/avatar/AvatarInput.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q/src/list/components/SettingsField.js" beforeDir="false" afterPath="$PROJECT_DIR$/q/src/list/components/SettingsField.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/getQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/getQuery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -143,7 +103,7 @@
       <workItem from="1651145072197" duration="8627000" />
       <workItem from="1651157205505" duration="3958000" />
       <workItem from="1651232010242" duration="3317000" />
-      <workItem from="1651490944084" duration="5578000" />
+      <workItem from="1651490944084" duration="6422000" />
     </task>
     <servers />
   </component>
