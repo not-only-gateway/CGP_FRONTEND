@@ -5,17 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="859d803a-e89d-4b4a-a6d4-d7ebb6120f73" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/CollaboratorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CollaboratorList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext" beforeDir="false" afterPath="$PROJECT_DIR$/ext" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/filter/Filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/filter/Filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/list/components/Element.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ext/list/components/Element.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/selector/Selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/selector/Selector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/selector/modules/SelectorModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/selector/modules/SelectorModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CommissionedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CommissionedList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/EffectiveList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EffectiveList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SimpleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SimpleList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UnitList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UnitList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/VacancyList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/VacancyList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/FormTemplate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ext/FormTemplate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/avatar/Avatar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/avatar/AvatarInput.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/avatar/styles/Avatar.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/Filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/components/CellHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/components/Field.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/components/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/hooks/useFilters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/styles/Field.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/filter/styles/Filters.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/hooks/deps/dataActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/hooks/deps/dataReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/hooks/useField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/hooks/useQuery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/hooks/useRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/List.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/ListTabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/components/Element.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/components/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/components/Settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/components/SettingsField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/components/Validate.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/hook/useHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/hook/useList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/styles/Element.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/styles/Header.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/styles/List.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/styles/Row.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/styles/Settings.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/styles/Tabs.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/styles/Validate.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/list/templates/keyTemplate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/selector/Selector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/selector/modules/SelectorModal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/selector/styles/Selector.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/selector/styles/SelectorModal.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/selector/styles/Shared.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/wrapper/components/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/components/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/wrapper/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/components/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q/src/list/components/SettingsField.js" beforeDir="false" afterPath="$PROJECT_DIR$/q/src/list/components/SettingsField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/getQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/getQuery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +73,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ext" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -57,23 +98,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/q/src/locale" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="advanced.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\q\src\locale" />
+      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\ext" />
+      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\q\src" />
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\pages" />
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\git\markdown\component" />
-      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\git\issues\styles" />
-      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\f\src" />
-      <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\c\git\issues" />
@@ -100,7 +142,8 @@
       <workItem from="1651144420062" duration="519000" />
       <workItem from="1651145072197" duration="8627000" />
       <workItem from="1651157205505" duration="3958000" />
-      <workItem from="1651232010242" duration="2928000" />
+      <workItem from="1651232010242" duration="3317000" />
+      <workItem from="1651490944084" duration="5578000" />
     </task>
     <servers />
   </component>

@@ -1,15 +1,14 @@
 import React, {useState} from "react";
 import PropTypes from "prop-types";
 import {Switcher} from "@f-ui/core";
-import useQuery from "../ext/hooks/useQuery";
 import getQuery from "../utils/getQuery";
 import {KEYS} from "../templates/KEYS";
 import styles from "../styles/Home.module.css";
-import List from "../ext/list/List";
 import FormTemplate from "../ext/FormTemplate";
 import {VACANCY} from "../templates/forms/VACANCY";
 import page from "../public/page.json";
-import useRequest from "../ext/hooks/useRequest";
+import {List, useQuery, useRequest} from "@f-ui/query";
+import Cookies from "universal-cookie/lib";
 
 export default function VacancyList(props) {
     const [current, setCurrent] = useState()
@@ -35,7 +34,8 @@ export default function VacancyList(props) {
                             unit: data.unit?.acronym,
                             holder: data.holder?.id,
                             substitute: data.substitute?.id
-                        }
+                        },
+                        headers: {'authorization': (new Cookies()).get('jwt')}
                     }).catch()
                 }}
             />
@@ -51,7 +51,8 @@ export default function VacancyList(props) {
 
                         make({
                             url: page.host + '/api/vacancy/' + e.id,
-                            method: 'delete'
+                            method: 'delete',
+                            headers: {'authorization': (new Cookies()).get('jwt')}
                         })
                             .then(() => hook.clean())
                             .catch()

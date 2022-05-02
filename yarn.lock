@@ -974,37 +974,26 @@
   resolved "https://registry.yarnpkg.com/@f-ui/charts/-/charts-0.0.1-alpha.tgz#7188d07309f0ab5d944266bb0278fc7008f8c1a9"
   integrity sha512-Jp7sjouwgGub5Fc1W2JxOLSt5/uew4fkxolFoCMUrx9FYqt02W9HgxI4j7oQdRUfinQD7h4bVF/5uV42rcTsRA==
 
-"@f-ui/core@0.1.47-alpha":
-  version "0.1.47-alpha"
-  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.47-alpha.tgz#510573a814d620da537f483fc8126456bc10ecbb"
-  integrity sha512-qhhAAuG0RM0Rh6763rQcGIcejhaX1jfwM9TbRztAQ2Az0aP9rGKERN83S4jHKbRtIW9SwRONKyyodRq4qTN4lQ==
+"@f-ui/core@^0.1.51-alpha":
+  version "0.1.51-alpha"
+  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.51-alpha.tgz#411373593e0e9e7cdd64067cb2b60ededcb8b328"
+  integrity sha512-9Vp0qkV7IX9G/o/mG2dInin7UUCdhNCCut4c81arBJzK8ucOsZ1KJMNpECZIie09yjEP4Zx/R6cTfcaqyfw+Lw==
   dependencies:
     prop-types "^15.7.2"
     react "17.0.2"
     react-dom "17.0.2"
     react-imask "^6.4.2"
 
-"@f-ui/core@^0.1.50-alpha":
-  version "0.1.50-alpha"
-  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.50-alpha.tgz#ec4ddac418475edc82db4eab8c693732dd738c9c"
-  integrity sha512-GRZllPBk9Yo9PgTFWcDS/ndqvU//RfsLWSqVIsywcFyHW1z6PWgTWFErjnzhyGp5myaIDvSawiXYmNxqBfXwPA==
+"@f-ui/query@^0.0.13-alpha":
+  version "0.0.13-alpha"
+  resolved "https://registry.yarnpkg.com/@f-ui/query/-/query-0.0.13-alpha.tgz#5d6a6a6852d0ee689efcbdbbeff51f39790264f7"
+  integrity sha512-dEWWtLKgSjbcGAz/mJaRFHIFu4iHFA7vwznpBLYtLiYYHq5UF2eHsouliC9DCtBa5bY/THBWMiaQepddW7rVdQ==
   dependencies:
-    prop-types "^15.7.2"
-    react "17.0.2"
-    react-dom "17.0.2"
-    react-imask "^6.4.2"
-
-"@f-ui/query@^0.0.1-alpha":
-  version "0.0.1-alpha"
-  resolved "https://registry.yarnpkg.com/@f-ui/query/-/query-0.0.1-alpha.tgz#d059122e41557c38f47383f01d387156e5f1ed62"
-  integrity sha512-RfXkXWf87TkVxTD1ASJHxbc/rexyjYNMobo/E9bbB9Lsali5F18hixJy9ohshvzCBA52nKzieQmU8ZptVHQD7A==
-  dependencies:
-    "@f-ui/core" "0.1.47-alpha"
+    "@f-ui/core" "^0.1.51-alpha"
     axios "^0.26.1"
     prop-types "^15.7.2"
     react "17.0.2"
     react-dom "17.0.2"
-    react-imask "^6.4.2"
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
