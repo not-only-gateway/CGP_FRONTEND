@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="859d803a-e89d-4b4a-a6d4-d7ebb6120f73" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CollaboratorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CollaboratorList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CommissionedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CommissionedList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/EffectiveList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EffectiveList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SimpleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SimpleList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UnitList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UnitList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/VacancyList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/VacancyList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext" beforeDir="false" afterPath="$PROJECT_DIR$/ext" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/avatar/AvatarInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ext/avatar/AvatarInput.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/getQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/getQuery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +23,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ext" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -103,7 +93,9 @@
       <workItem from="1651145072197" duration="8627000" />
       <workItem from="1651157205505" duration="3958000" />
       <workItem from="1651232010242" duration="3317000" />
-      <workItem from="1651490944084" duration="6422000" />
+      <workItem from="1651490944084" duration="8466000" />
+      <workItem from="1651584174114" duration="525000" />
+      <workItem from="1651834968717" duration="1615000" />
     </task>
     <servers />
   </component>
