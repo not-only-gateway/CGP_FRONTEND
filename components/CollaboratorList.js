@@ -17,6 +17,7 @@ import Cookies from "universal-cookie/lib";
 export default function CollaboratorList(props) {
     const [current, setCurrent] = useState()
     const hook = useQuery(getQuery('collaborator'), [{asc: true, desc: false, key: 'name'}])
+
     const {make, setShowSuccess} = useRequest(false)
 
     return (
@@ -57,7 +58,7 @@ export default function CollaboratorList(props) {
             <List
                 mapKeyOnNull={{
                     key: 'image',
-                    value: (v) => v.gender === 'Masculino' ? './male.svg' : './female.svg'
+                    value: (v) => v.gender.toLowerCase() === 'masculino' ? './male.svg' : './female.svg'
                 }}
                 options={[{
                     label: 'Deletar',

@@ -100,7 +100,7 @@ export const KEYS = {
     SIMPLE: [{key: 'description', type: 'string', label: 'Descrição', visible: true},],
 
     COLLABORATOR_SIMPLE: collab,
-    COLLABORATOR: [{key: 'image', type: 'image', visible: true}, {
+    COLLABORATOR: [{key: 'image', type: 'image', visible: true,minHeight: '250px'}, {
         key: 'name',
         type: 'string',
         label: 'Nome',
@@ -108,12 +108,16 @@ export const KEYS = {
     }, {key: 'birth', type: 'date', label: 'Data de nascimento', visible: true, hoursOffset: 4},
 
 
-        {key: 'registration', type: 'string', label: 'Matricula', visible: false}, {
+        {key: 'registration', type: 'string', label: 'Matricula', visible: false},
+        {
             key: 'superior',
             type: 'string',
             label: 'Superior',
             visible: false
-        }, {key: 'gender', type: 'string', label: 'Gênero', visible: false}, {
+        },
+        {key: 'active', type: 'bool', label: 'Ativo', visible: false},
+
+        {key: 'gender', type: 'string', label: 'Gênero', visible: false}, {
             key: 'nationality',
             type: 'string',
             label: 'Nacionalidade',
