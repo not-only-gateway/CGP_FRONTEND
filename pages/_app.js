@@ -6,10 +6,12 @@ function MyApp({Component, pageProps}) {
 
     return (<Wrapper
         titles={{
-            '/': 'SIS-AEB'
+            '/admin': 'SIS-AEB',
+            '/': 'SIS-AEB | Ramais',
+            'auth': 'SIS-AEB | Entrar'
         }}
         host={page.auth_host}
-        pages={[{label: 'Início', path: '/', requireAuth: true}, {label: 'Ramais', path: '/ramais', requireAuth: false}]}
+        pages={[{label: 'Início', path: '/admin', requireAuth: true, requireAdmin: true}, {label: 'Ramais', path: '/', requireAuth: false}]}
     >
         <div style={{paddingTop: '8px'}}>
             <Component {...pageProps}/>
