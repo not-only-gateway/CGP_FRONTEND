@@ -5,19 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93af5948-4d25-4a59-8c24-1a4da7664696" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/c.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/CollaboratorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CollaboratorList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext" beforeDir="false" afterPath="$PROJECT_DIR$/ext" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/wrapper/components/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/components/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/wrapper/styles/Auth.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/styles/Auth.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/test.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/KEYS.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/KEYS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/forms/COLLABORATOR.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms/COLLABORATOR.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/src/visualization" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -50,7 +60,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gustavo.roque\Desktop\CGP\frontend-cgp\pages" />
       <recent name="C:\Users\gustavo.roque\Desktop\CGP\frontend-cgp\core\src\visualization" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gustavo.roque\Desktop\CGP\frontend-cgp\ext" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -63,6 +77,7 @@
       <updated>1653392050858</updated>
       <workItem from="1653392052628" duration="925000" />
       <workItem from="1653400252736" duration="6480000" />
+      <workItem from="1653477315611" duration="6680000" />
     </task>
     <servers />
   </component>

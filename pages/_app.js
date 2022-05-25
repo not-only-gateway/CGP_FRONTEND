@@ -9,7 +9,7 @@ function MyApp({Component, pageProps}) {
             '/': 'SIS-AEB'
         }}
         host={page.auth_host}
-        pages={[{label: 'Início', path: '/', requireAuth: true}]}
+        pages={[{label: 'Início', path: '/', requireAuth: true}, {label: 'Ramais', path: '/ramais', requireAuth: false}]}
     >
         <div style={{paddingTop: '8px'}}>
             <Component {...pageProps}/>

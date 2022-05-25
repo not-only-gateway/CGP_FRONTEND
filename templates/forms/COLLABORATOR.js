@@ -84,8 +84,8 @@ export const COLLABORATOR = [{
             type: 'select',
             customProps: {
                 choices: [
-                    {key: 'Masculino', value: 'Masculino'},
-                    {key: 'Feminino', value: 'Feminino'},
+                    {key: 'masculino', value: 'Masculino'},
+                    {key: 'feminino', value: 'Feminino'},
                     {key: 'Outro', value: 'Outro'}
                 ]
             },

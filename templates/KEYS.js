@@ -100,12 +100,15 @@ export const KEYS = {
     SIMPLE: [{key: 'description', type: 'string', label: 'Descrição', visible: true},],
 
     COLLABORATOR_SIMPLE: collab,
-    COLLABORATOR: [{key: 'image', type: 'image', visible: true,minHeight: '250px'}, {
-        key: 'name',
-        type: 'string',
-        label: 'Nome',
-        visible: true
-    }, {key: 'birth', type: 'date', label: 'Data de nascimento', visible: true, hoursOffset: 4},
+    COLLABORATOR: [
+        {key: 'image', type: 'image', visible: true, minHeight: '250px'},
+        {
+            key: 'name',
+            type: 'string',
+            label: 'Nome',
+            visible: true
+        },
+        {key: 'birth', type: 'date', label: 'Data de nascimento', visible: true, hoursOffset: 4},
 
 
         {key: 'registration', type: 'string', label: 'Matricula', visible: false},
@@ -115,7 +118,7 @@ export const KEYS = {
             label: 'Superior',
             visible: false
         },
-        {key: 'active', type: 'bool', label: 'Ativo', visible: false},
+        {key: 'active', type: 'bool', label: 'Ativo', visible: true},
 
         {key: 'gender', type: 'string', label: 'Gênero', visible: false}, {
             key: 'nationality',
@@ -144,5 +147,45 @@ export const KEYS = {
             label: 'Unidade',
             visible: true,
             query: {...getQuery('unit'), keys: unit, primaryKey: 'acronym'}
-        }]
+        }],
+    NOT_ADM_COLLABORATOR: [
+        {key: 'image', type: 'image', visible: true, minHeight: '250px'},
+        {
+            key: 'name',
+            type: 'string',
+            label: 'Nome',
+            visible: true,
+            hideLabel: true,
+            method: (setColor, key, object) => {
+                return object? (
+                    <div style={{display: 'flex', gap: '4px', alignItems: 'center'}}>
+                        <span className={'material-icons-round'}
+                              style={{fontSize: '1.1rem', color: '#ff5555'}}>cake</span>
+                        {object[key.key]}
+
+                    </div>
+                ) : ''
+            }
+        },
+
+        {key: 'active', type: 'bool', label: 'Ativo', visible: false},
+        {key: 'extension', type: 'string', label: 'Ramal', visible: true}, {
+            key: 'personal_email',
+            type: 'string',
+            label: 'Email pessoal',
+            visible: false
+        }, {key: 'email', type: 'string', label: 'Email', visible: true}, {
+            key: 'degree',
+            type: 'string',
+            label: 'Escolaridade',
+            visible: false
+        }, {
+            key: 'unit',
+            type: 'object',
+            subfieldKey: 'acronym',
+            label: 'Unidade',
+            visible: true,
+            query: {...getQuery('unit'), keys: unit, primaryKey: 'acronym'}
+        }
+    ]
 }

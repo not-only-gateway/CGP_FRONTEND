@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import {Tab, VerticalTabs} from "@f-ui/core";
 import styles from '../styles/Home.module.css'
 import CollaboratorList from "../components/CollaboratorList";
@@ -8,35 +8,24 @@ import SimpleList from "../components/SimpleList";
 import CommissionedList from "../components/CommissionedList";
 import EffectiveList from "../components/EffectiveList";
 import {useRouter} from "next/router";
+import AdminContext from "../ext/wrapper/AdminContext";
 
 export default function Home() {
     const [open, setOpen] = useState(0)
     const router = useRouter()
+    const isADM = useContext(AdminContext)
     useEffect(() => {
-        // const stateVariables = [{key: 'cafe', value: 1}]
-        // const executionLines = [{key: 'test', value: `console.log(this.state`}]
-        // const template = class {
-        //     constructor(state) {
-        //         state.forEach(s => {
-        //             this[s.key] = s.value
-        //         })
-        //     }
-        // }
-        //
-        // const instance = new template(stateVariables)
-        // executionLines.forEach(e => {
-        //     const inst = new Function('data', e.value)
-        //     instance[e.key] = inst()
-        // })
-        //
-        // instance.test()
+        if(!isADM)
+            router.push('/ramais')
+    }, [isADM])
+    useEffect(() => {
 
-     
         if (router.isReady) {
             const i = parseInt(router.query.indexTab)
             setOpen(i ? i : 0)
         }
     }, [router.isReady])
+
 
     return (
         <VerticalTabs
