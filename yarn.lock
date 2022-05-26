@@ -969,11 +969,6 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@f-ui/charts@^0.0.1-alpha":
-  version "0.0.1-alpha"
-  resolved "https://registry.yarnpkg.com/@f-ui/charts/-/charts-0.0.1-alpha.tgz#7188d07309f0ab5d944266bb0278fc7008f8c1a9"
-  integrity sha512-Jp7sjouwgGub5Fc1W2JxOLSt5/uew4fkxolFoCMUrx9FYqt02W9HgxI4j7oQdRUfinQD7h4bVF/5uV42rcTsRA==
-
 "@f-ui/core@^0.1.55-alpha":
   version "0.1.55-alpha"
   resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.55-alpha.tgz#d5d6bf536ecfe520d279fe90435245d814745ec4"
@@ -983,6 +978,15 @@
     react "17.0.2"
     react-dom "17.0.2"
     react-imask "^6.4.2"
+
+"@f-ui/markdown@^0.1.2-alpha":
+  version "0.1.2-alpha"
+  resolved "https://registry.yarnpkg.com/@f-ui/markdown/-/markdown-0.1.2-alpha.tgz#d7b8795d00036f17440e68d606975e57281ee891"
+  integrity sha512-pw5cRF3/kOpT2q8W+phcXK4BVnTY0DO6b7mKu+z0OLKYAiZfvWRR2ebCz+U5DR+xyKABSrMuZcZAt+ndyOZpmQ==
+  dependencies:
+    prop-types "^15.7.2"
+    react "17.0.2"
+    react-dom "17.0.2"
 
 "@f-ui/query@^0.0.17-alpha":
   version "0.0.17-alpha"

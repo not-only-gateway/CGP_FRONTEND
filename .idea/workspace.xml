@@ -6,29 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="93af5948-4d25-4a59-8c24-1a4da7664696" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CollaboratorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CollaboratorList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext" beforeDir="false" afterPath="$PROJECT_DIR$/ext" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/nav/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/nav/Navigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/nav/NavigationGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/nav/NavigationGroup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/query/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/src/avatar/Avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/query/src/avatar/Avatar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/src/avatar/styles/Avatar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/query/src/avatar/styles/Avatar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/src/filter/Filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/query/src/filter/Filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/src/hooks/useQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/query/src/hooks/useQuery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/src/list/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/query/src/list/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/src/list/ListTabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/query/src/list/ListTabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/src/list/components/Element.js" beforeDir="false" afterPath="$PROJECT_DIR$/query/src/list/components/Element.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/src/list/styles/Element.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/query/src/list/styles/Element.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/src/list/styles/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/query/src/list/styles/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/src/list/styles/List.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/query/src/list/styles/List.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/src/selector/Selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/query/src/selector/Selector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/src/selector/modules/SelectorModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/query/src/selector/modules/SelectorModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/KEYS.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/KEYS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +26,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/query" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="zakqk6gz" />
@@ -59,20 +42,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/gustavo.roque/Documents/frontend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gustavo.roque/Documents/frontend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gustavo.roque\Desktop\CGP\frontend-cgp\pages" />
@@ -95,11 +78,23 @@
       <workItem from="1653477315611" duration="6879000" />
       <workItem from="1653486875086" duration="1110000" />
       <workItem from="1653567908070" duration="300000" />
-      <workItem from="1653568217975" duration="5303000" />
+      <workItem from="1653568217975" duration="7346000" />
+      <workItem from="1653578012847" duration="1095000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
