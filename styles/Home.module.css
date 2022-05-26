@@ -62,7 +62,7 @@
 .wrapper {
     height: 100%;
     display: grid;
-width: 100%;
+    width: 100%;
 
 
     overflow-x: hidden;
@@ -84,18 +84,43 @@ width: 100%;
 
 }
 
-.tabs{
+.tabs {
     padding: 0 10%;
     display: flex;
     gap: 8px;
 
 }
 
-.tab{
+.tab {
     display: grid;
     max-width: 100%;
     width: 100%;
     overflow-x: hidden;
 
 
+}
+
+.modal {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: clamp(250px, 20vw, 450px);
+    height: 100vh;
+
+    align-items: center;
+    color: var(--fabric-color-secondary);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background: var(--fabric-background-primary);
+
+    box-shadow: var(--fabric-boxshadow);
+}
+
+.modalWrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.selectedCard {
+    width: 100% !important;
 }

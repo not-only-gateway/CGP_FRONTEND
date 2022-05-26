@@ -156,30 +156,31 @@ export const KEYS = {
             label: 'Nome',
             visible: true,
             hideLabel: true,
-            method: (setColor, key, object) => {
-                return object? (
-                    <div style={{display: 'flex', gap: '4px', alignItems: 'center'}}>
-                        <span className={'material-icons-round'}
-                              style={{fontSize: '1.1rem', color: '#ff5555'}}>cake</span>
-                        {object[key.key]}
+            method: (setColor, key, object, card) => {
+                const date = new Date(object.birth)
+                const month = date.getUTCMonth() + 1;
+                const day = date.getUTCDate();
+                const dateObj = new Date();
+                const monthM = dateObj.getUTCMonth() + 1;
+                const dayM = dateObj.getUTCDate();
+                const isToday = month === monthM && day === dayM
 
+                return object ? (
+                    <div style={{display: 'flex', gap: '4px', alignItems: 'center', textAlign: card ? 'center' : undefined, width: '100%'}}>
+                        <div style={{overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', maxWidth: '100%'}}>
+                            {object[key.key]}
+                        </div>
+                        {isToday ? <span className={'material-icons-round'}
+                                         style={{fontSize: '1.1rem', color: '#ff5555'}}>cake</span> : null}
                     </div>
                 ) : ''
             }
         },
 
-        {key: 'active', type: 'bool', label: 'Ativo', visible: false},
-        {key: 'extension', type: 'string', label: 'Ramal', visible: true}, {
-            key: 'personal_email',
-            type: 'string',
-            label: 'Email pessoal',
-            visible: false
-        }, {key: 'email', type: 'string', label: 'Email', visible: true}, {
-            key: 'degree',
-            type: 'string',
-            label: 'Escolaridade',
-            visible: false
-        }, {
+
+        {key: 'extension', type: 'string', label: 'Ramal', visible: true},
+        {key: 'email', type: 'string', label: 'Email', visible: true},
+        {
             key: 'unit',
             type: 'object',
             subfieldKey: 'acronym',

@@ -10,11 +10,9 @@ import EffectiveList from "../components/EffectiveList";
 import {useRouter} from "next/router";
 
 export default function Index() {
-    useEffect(() => {
-        console.log('HERE')
-    }, [])
+
     return (
-        <div style={{padding: '0 32px'}}>
+        <div style={{padding: '0 10%'}}>
             <CollaboratorList/>
         </div>
     )

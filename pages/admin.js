@@ -33,7 +33,7 @@ export default function Home() {
             setOpen={v => {
                 setOpen(v)
                 router.push({
-                    pathname: '/',
+                    pathname: '/admin',
                     query: {indexTab: v},
                 })
             }} className={styles.tabs}>
