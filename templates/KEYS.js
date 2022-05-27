@@ -149,7 +149,13 @@ export const KEYS = {
             query: {...getQuery('unit'), keys: unit, primaryKey: 'acronym'}
         }],
     NOT_ADM_COLLABORATOR: [
-        {key: 'image', type: 'image', visible: true, minHeight: '250px'},
+        {
+            key: 'image',
+            type: 'image',
+            visible: true,
+            minHeight: '250px',
+
+        },
         {
             key: 'name',
             type: 'string',
@@ -166,8 +172,20 @@ export const KEYS = {
                 const isToday = month === monthM && day === dayM
 
                 return object ? (
-                    <div style={{display: 'flex', gap: '4px', alignItems: 'center', textAlign: card ? 'center' : undefined, width: '100%'}}>
-                        <div style={{overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', maxWidth: '100%'}}>
+                    <div style={{
+                        display: 'flex',
+                        gap: '4px',
+                        alignItems: 'center',
+                        width: '100%',
+
+                    }}>
+                        <div style={{
+                            overflow: 'hidden',
+                            whiteSpace: 'nowrap',
+                            textOverflow: 'ellipsis',
+                            fontSize: '.85rem',
+                            maxWidth: '100%'
+                        }}>
                             {object[key.key]}
                         </div>
                         {isToday ? <span className={'material-icons-round'}

@@ -124,3 +124,21 @@
 .selectedCard {
     width: 100% !important;
 }
+
+.buttonDownload {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.qrCode {
+    margin-top: 16px;
+    display: grid;
+    gap: 4px;
+    justify-content: center;
+    background: var(--fabric-background-tertiary);
+    border: var(--fabric-border-primary) 1px solid;
+    border-radius: 5px;
+    padding: 16px;
+}

@@ -1,6 +1,6 @@
-import React, {useContext, useMemo, useState} from "react";
+import React, {useContext, useEffect, useMemo, useRef, useState} from "react";
 import PropTypes from "prop-types";
-import {DataRow, Modal, Switcher} from "@f-ui/core";
+import {Button, DataRow, Modal, Switcher} from "@f-ui/core";
 
 import getQuery from "../utils/getQuery";
 import {KEYS} from "../templates/KEYS";
@@ -12,7 +12,7 @@ import {COLLABORATOR} from "../templates/forms/COLLABORATOR";
 import page from "../public/page.json";
 import Cookies from "universal-cookie/lib";
 import AdminContext from "../ext/wrapper/AdminContext";
-
+import QRCode from 'qrcode'
 
 export default function CollaboratorList() {
     const isADM = useContext(AdminContext)
@@ -26,27 +26,14 @@ export default function CollaboratorList() {
         if (!isADM) return KEYS.NOT_ADM_COLLABORATOR
         return KEYS.COLLABORATOR
     }, [isADM])
-
     return (<>
         {!isADM ? (
             <Modal
                 animationStyle={'slide-right'}
                 className={styles.modal} blurIntensity={'1px'} wrapperClassName={styles.modalWrapper}
-                open={current !== undefined} handleClose={() => setCurrent(undefined)}>
-                <Avatar
-                    alt={current?.name}
-                    src={current?.image}
-                    size={"huge"}
-                    outlined={true}
-                />
-                <h2>{current?.name}</h2>
-                {current ?
-                    <DataRow
-                        keys={keys.filter(k => k.key !== 'image')}
-                        asCard={true} selfContained={true}
-                        object={current}
-                        className={styles.selectedCard}
-                    /> : undefined}
+                open={current !== undefined} handleClose={() => setCurrent(undefined)}
+            >
+                <User keys={keys} current={current}/>
             </Modal>
         ) : null}
         <Switcher openChild={current && isADM ? 0 : 1} className={styles.wrapper}>
@@ -84,7 +71,7 @@ export default function CollaboratorList() {
                 }}
             />
             <List
-
+                cardHeight={'450px'}
                 defaultVisualization={'card'}
                 hasCardView={true}
                 mapKeyOnNull={{
@@ -117,7 +104,6 @@ export default function CollaboratorList() {
                     const state = {...(e.data ? e.data : e), id: maskedCPF}
                     if (state.gender) state.gender = state.gender.toLowerCase()
                     setCurrent(state)
-
                 }}
                 title={'Colaboradores'}
             />
@@ -127,4 +113,60 @@ export default function CollaboratorList() {
 
 CollaboratorList.propTypes = {
     handleClose: PropTypes.func, create: PropTypes.bool, data: PropTypes.object
+}
+
+
+function User({current, keys}) {
+    const ref = useRef()
+    useEffect(() => {
+        QRCode.toCanvas(ref.current, getVCARD(current.name, current.email, current.extension), (err) => console.log(err))
+    }, [])
+
+    return (
+        <>
+            <Avatar
+                alt={current?.name}
+                src={current?.image}
+                size={"huge"}
+                outlined={true}
+            />
+            <h2>{current?.name}</h2>
+            {current ?
+                <DataRow
+                    keys={keys.filter(k => k.key !== 'image')}
+                    asCard={true} selfContained={true}
+                    object={current}
+                    className={styles.selectedCard}
+                /> : undefined}
+
+          <div className={styles.qrCode}>
+              <canvas ref={ref}/>
+              <Button variant={"filled"}
+                      className={styles.buttonDownload}
+                      onClick={(e) => {
+                          const element = document.createElement('a');
+                          element.setAttribute('href', ref.current.toDataURL());
+                          element.setAttribute('download', 'QR-CODE-' + current.name);
+                          element.style.display = 'none';
+                          document.body.appendChild(element);
+                          element.click();
+                          document.body.removeChild(element);
+                      }}>
+                  <span className={'material-icons-round'} style={{fontSize: '1.1rem'}}>file_download</span>
+                  Download
+              </Button>
+          </div>
+        </>
+    )
+}
+
+function getVCARD(name, email, ramal) {
+    const splitName = name.split(/\s/)
+    return `BEGIN:VCARD
+N: ${splitName[splitName.length - 1]}; ${splitName[0]};;;
+FN: ${name}
+TITLE: Agência Espacial Brasileira
+TEL;WORK,VOICE:61 2033-${ramal}
+EMAIL;INTERNET,HOME:${email}
+END:VCARD`
 }
