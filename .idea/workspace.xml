@@ -7,15 +7,13 @@
     <list default="true" id="93af5948-4d25-4a59-8c24-1a4da7664696" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/CollaboratorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CollaboratorList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext" beforeDir="false" afterPath="$PROJECT_DIR$/ext" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/nav/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/nav/Navigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/nav/NavigationGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/nav/NavigationGroup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/query/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/KEYS.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/KEYS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,26 +45,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gustavo.roque/Documents/frontend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/gustavo.roque/Documents/frontend/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gustavo.roque\Documents\frontend\public" />
       <recent name="C:\Users\gustavo.roque\Desktop\CGP\frontend-cgp\pages" />
       <recent name="C:\Users\gustavo.roque\Desktop\CGP\frontend-cgp\core\src\visualization" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gustavo.roque\Documents\frontend\public" />
       <recent name="C:\Users\gustavo.roque\Desktop\CGP\frontend-cgp\ext" />
     </key>
   </component>
@@ -86,7 +86,11 @@
       <workItem from="1653568217975" duration="7346000" />
       <workItem from="1653578012847" duration="1095000" />
       <workItem from="1653653882791" duration="3291000" />
-      <workItem from="1653657957726" duration="2107000" />
+      <workItem from="1653657957726" duration="2296000" />
+      <workItem from="1653660631568" duration="636000" />
+      <workItem from="1653662001759" duration="273000" />
+      <workItem from="1653662397843" duration="2521000" />
+      <workItem from="1653908650761" duration="5712000" />
     </task>
     <servers />
   </component>

@@ -106,14 +106,15 @@
     width: clamp(250px, 20vw, 450px);
     height: 100vh;
 
-    align-items: center;
     color: var(--fabric-color-secondary);
     padding: 16px;
-    display: flex;
-    flex-direction: column;
+
+
     background: var(--fabric-background-primary);
 
     box-shadow: var(--fabric-boxshadow);
+
+    overflow-y: auto;
 }
 
 .modalWrapper {
@@ -123,6 +124,7 @@
 
 .selectedCard {
     width: 100% !important;
+    min-height: 100% !important;
 }
 
 .buttonDownload {
@@ -140,5 +142,54 @@
     background: var(--fabric-background-tertiary);
     border: var(--fabric-border-primary) 1px solid;
     border-radius: 5px;
-    padding: 16px;
+    padding: 8px 16px;
+    width: 100%;
+}
+.qrCode>legend{
+    font-weight: 550;
+    font-size: .9rem;
+}
+.canvas {
+    width: 100%;
+
+}
+
+.modalTab {
+    display: grid;
+    align-items: flex-start;
+    gap: 2px;
+    justify-items: center;
+
+}
+
+.cardWrapper {
+    max-width: 100%;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgData {
+    max-width: 100%;
+}
+@font-face {
+    font-family: "viga";
+    src: url("../public/viga.ttf");
+
+}
+.cardInfo {
+    font-family: viga;
+    color: #102d69;
+    font-weight: 550;
+    line-height:8px;
+    font-size: 5px;
+    /*background: red;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: fit-content;
+    text-align: right;
+    padding-top: 10%;
+    padding-right: 5%;
+    height: 100%;
 }
