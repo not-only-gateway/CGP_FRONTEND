@@ -1,7 +1,7 @@
 import React, {useCallback, useContext, useEffect, useMemo, useRef, useState} from "react";
 import PropTypes from "prop-types";
-import {Button, DataRow, Modal, Switcher, Tab, Tabs, TextField} from "@f-ui/core";
-
+import {AlertProvider, Button, DataRow, Modal, Switcher, Tab, Tabs, TextField} from "@f-ui/core";
+import env from '../env.json'
 import getQuery from "../utils/getQuery";
 import {KEYS, unit} from "../templates/KEYS";
 import styles from "../styles/Home.module.css";
@@ -14,6 +14,7 @@ import AdminContext from "../ext/wrapper/AdminContext";
 import QRCode from 'qrcode'
 import html2canvas from "html2canvas";
 import ENV from "../env";
+import sendMail from "../ext/mail/sendMail";
 
 
 export default function CollaboratorList() {
@@ -112,6 +113,7 @@ CollaboratorList.propTypes = {
 
 
 function User({current, keys, setCurrent}) {
+    const alert = useContext(AlertProvider)
     const ref = useCallback(node => {
         if (node)
             QRCode.toCanvas(node, getVCARD(current.name, current.email, current.extension), (err) => console.log(err))
@@ -163,10 +165,36 @@ function User({current, keys, setCurrent}) {
                     className={styles.buttonDownload}
                     disabled={reportData.length === 0}
                     onClick={(e) => {
+                        const opts = {
+                            subject: 'REPORT - Erro dado colaborador',
+                            html: `
+                            <h3>Pedido</h3>
+                            <p>
+                                ${reportData}
+                            </p>
+                            <h3>Dado no momento da mensagem</h3>
+                            <code>
+                            <pre>${JSON.stringify(current, null, 4)}</pre>
+                            </code>
+                            <h3>Data do pedido</h3>
+                            <p>
+                                ${(new Date()).toDateString()}
+                            </p>
+                            `,
+                            text: '',
+                        };
 
-
-                        setReport(false)
-                        setReportData('')
+                        //
+                        // Promise.all(env.emails.map(e => sendMail({...opts, to: e}, smtpConfig)))
+                        //     .then(() => {
+                        //         alert.pushAlert('Mensagem enviada', 'success')
+                        //         setReport(false)
+                        //         setReportData('')
+                        //     }).catch(e => {
+                        //     alert.pushAlert('Erro no envio', 'error')
+                        //     setReport(false)
+                        //     setReportData('')
+                        // })
                     }}>
                     Enviar
                 </Button>
