@@ -6,9 +6,9 @@ import {KEYS} from "../templates/KEYS";
 import styles from "../styles/Home.module.css";
 import FormTemplate from "../ext/FormTemplate";
 import {VACANCY} from "../templates/forms/VACANCY";
-import page from "../public/page.json";
 import {List, useQuery, useRequest} from "@f-ui/query";
 import Cookies from "universal-cookie/lib";
+import ENV from "../env";
 
 export default function VacancyList(props) {
     const [current, setCurrent] = useState()
@@ -26,7 +26,7 @@ export default function VacancyList(props) {
                 obj={VACANCY}
                 submit={(data) => {
                     make({
-                        url: page.host + '/api/vacancy/' + data.id,
+                        url: ENV.URLS.host + '/api/vacancy/' + data.id,
                         method: 'PUT',
                         data: {
                             ...data,
@@ -50,7 +50,7 @@ export default function VacancyList(props) {
                     onClick: (e) => {
 
                         make({
-                            url: page.host + '/api/vacancy/' + e.id,
+                            url: ENV.URLS.host + '/api/vacancy/' + e.id,
                             method: 'delete',
                             headers: {'authorization': (new Cookies()).get('jwt')}
                         })

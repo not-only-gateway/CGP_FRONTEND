@@ -6,9 +6,9 @@ import {KEYS} from "../templates/KEYS";
 import styles from "../styles/Home.module.css";
 import FormTemplate from "../ext/FormTemplate";
 import {UNIT} from "../templates/forms/UNIT";
-import page from "../public/page.json";
 import {List, useQuery, useRequest} from "@f-ui/query";
 import Cookies from "universal-cookie/lib";
+import ENV from "../env";
 
 export default function UnitList(props) {
     const [current, setCurrent] = useState()
@@ -26,7 +26,7 @@ export default function UnitList(props) {
                 obj={UNIT}
                 submit={(data) => {
                     make({
-                        url: page.host + '/api/unit' + (Object.keys(current).length === 0 ? '' : '/' + data.acronym),
+                        url: ENV.URLS.host + '/api/unit' + (Object.keys(current).length === 0 ? '' : '/' + data.acronym),
                         method: Object.keys(current).length === 0 ? 'POST' : 'PUT',
                         data: {
                             ...data,
@@ -47,7 +47,7 @@ export default function UnitList(props) {
                     icon: <span className={'material-icons-round'}>delete_forever</span>,
                     onClick: (e) => {
                         make({
-                            url: page.host + '/api/unit/' + e.id,
+                            url: ENV.URLS.host + '/api/unit/' + e.id,
                             method: 'delete',
                             headers: {'authorization': (new Cookies()).get('jwt')}
                         })

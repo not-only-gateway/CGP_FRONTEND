@@ -5,10 +5,10 @@ import getQuery from "../utils/getQuery";
 import styles from "../styles/Home.module.css";
 import {KEYS} from "../templates/KEYS";
 import FormTemplate from "../ext/FormTemplate";
-import page from "../public/page.json";
 import {EFFECTIVE} from "../templates/forms/EFFECTIVE";
 import {List, useQuery, useRequest} from "@f-ui/query";
 import Cookies from "universal-cookie/lib";
+import ENV from "../env";
 
 export default function EffectiveList(props) {
     const [current, setCurrent] = useState()
@@ -26,7 +26,7 @@ export default function EffectiveList(props) {
                 obj={EFFECTIVE}
                 submit={(data) => {
                     make({
-                        url: page.host + '/api/effective' + (Object.keys(current).length === 0 ? '' : '/' + props.data.id),
+                        url: ENV.URLS.host + '/api/effective' + (Object.keys(current).length === 0 ? '' : '/' + props.data.id),
                         method: Object.keys(current).length === 0 ? 'POST' : 'PUT',
                         data,
                         headers: {'authorization': (new Cookies()).get('jwt')}
@@ -43,7 +43,7 @@ export default function EffectiveList(props) {
                     icon: <span className={'material-icons-round'}>delete_forever</span>,
                     onClick: (e) => {
                         make({
-                            url: page.host + '/api/effective/' + e.id,
+                            url: ENV.URLS.host + '/api/effective/' + e.id,
                             method: 'delete',
                             headers: {'authorization': (new Cookies()).get('jwt')}
                         })

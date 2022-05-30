@@ -145,10 +145,12 @@
     padding: 8px 16px;
     width: 100%;
 }
-.qrCode>legend{
+
+.qrCode > legend {
     font-weight: 550;
     font-size: .9rem;
 }
+
 .canvas {
     width: 100%;
 
@@ -156,9 +158,11 @@
 
 .modalTab {
     display: grid;
-    align-items: flex-start;
+    align-content: flex-start;
+
     gap: 2px;
     justify-items: center;
+    height: 100%;
 
 }
 
@@ -172,16 +176,18 @@
 .imgData {
     max-width: 100%;
 }
+
 @font-face {
     font-family: "viga";
     src: url("../public/viga.ttf");
 
 }
+
 .cardInfo {
     font-family: viga;
     color: #102d69;
     font-weight: 550;
-    line-height:8px;
+    line-height: 8px;
     font-size: 5px;
     /*background: red;*/
     position: absolute;
@@ -192,4 +198,39 @@
     padding-top: 10%;
     padding-right: 5%;
     height: 100%;
+}
+
+.report {
+    width: 100%;
+    position: absolute !important;
+    bottom: 0;
+}
+
+.modalContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+
+    height: 100%;
+}
+
+.reportModal {
+
+    padding: 16px;
+    width: clamp(350px, 50vw, 650px);
+    height: fit-content;
+    background: var(--fabric-background-primary);
+
+    border-radius: 5px;
+
+    box-shadow: var(--fabric-boxshadow);
+}
+
+.reportWrapperModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

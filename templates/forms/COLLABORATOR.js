@@ -20,7 +20,7 @@ export const COLLABORATOR = [{
             placeHolder: 'CPF',
             required: true,
             disabled: false,
-            key: 'id',
+            key: 'cpf',
             type: 'text',
             width: '100%',
             customProps: {

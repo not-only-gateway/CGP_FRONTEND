@@ -1,11 +1,11 @@
-import page from '../public/page.json'
 import Cookies from "universal-cookie/lib";
+import ENV from "../env";
 
 const cookies = new Cookies()
 export default function getQuery(suffix, relations = {}, deep_relations = []) {
 
     return {
-        url: page.host+ '/api/list/' + suffix,
+        url: ENV.URLS.host + '/api/list/' + suffix,
         parsePackage: pack => {
             let value = {...pack}
             value.filters = typeof value.filters === 'string' ? JSON.parse(value.filters) : value.filters

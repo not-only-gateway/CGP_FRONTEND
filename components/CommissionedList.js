@@ -5,10 +5,10 @@ import getQuery from "../utils/getQuery";
 import styles from "../styles/Home.module.css";
 import {KEYS} from "../templates/KEYS";
 import FormTemplate from "../ext/FormTemplate";
-import page from "../public/page.json";
 import {COMMISSIONED} from "../templates/forms/COMMISSIONED";
 import {List, useQuery, useRequest} from "@f-ui/query";
 import Cookies from "universal-cookie/lib";
+import ENV from "../env";
 
 export default function CommissionedList(props) {
     const [current, setCurrent] = useState()
@@ -27,7 +27,7 @@ export default function CommissionedList(props) {
                 obj={COMMISSIONED}
                 submit={(data) => {
                     make({
-                        url: page.host + '/api/commissioned' + '/' + props.data.id,
+                        url: ENV.URLS.host + '/api/commissioned' + '/' + props.data.id,
                         method:  'PUT',
                         data,
                         headers: {'authorization': (new Cookies()).get('jwt')}
@@ -45,7 +45,7 @@ export default function CommissionedList(props) {
                     onClick: (e) => {
                         console.log(e)
                         make({
-                            url: page.host + '/api/commissioned/' + e.id,
+                            url: ENV.URLS.host + '/api/commissioned/' + e.id,
                             method: 'delete',
                             headers: {'authorization': (new Cookies()).get('jwt')}
                         })

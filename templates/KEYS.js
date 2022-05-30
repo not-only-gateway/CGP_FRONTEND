@@ -1,6 +1,6 @@
 import getQuery from "../utils/getQuery";
 
-const unit = [{key: 'acronym', type: 'string', label: 'Acrônimo', visible: true}, {
+export const unit = [{key: 'acronym', type: 'string', label: 'Acrônimo', visible: true}, {
     key: 'name',
     type: 'string',
     label: 'Nome',
@@ -205,6 +205,12 @@ export const KEYS = {
             label: 'Unidade',
             visible: true,
             query: {...getQuery('unit'), keys: unit, primaryKey: 'acronym'}
+        },
+        {
+            key: 'role',
+            type: 'string',
+            label: 'Cargo',
+            visible: true
         }
     ]
 }
