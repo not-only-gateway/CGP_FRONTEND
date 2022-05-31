@@ -969,31 +969,22 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@f-ui/core@^0.1.56-alpha":
-  version "0.1.56-alpha"
-  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.56-alpha.tgz#b341cdef48d777ee352bf2766810f8a9d83db6e5"
-  integrity sha512-BA+HhjAyNOiOglxxjvYXF4QEOLEhURBf59x+vPZ3cA/qOdkzZkohxYTSPpeyTE8um4W1PnADfwW2gU7H/sOgsA==
+"@f-ui/core@^0.1.57-alpha":
+  version "0.1.57-alpha"
+  resolved "https://registry.yarnpkg.com/@f-ui/core/-/core-0.1.57-alpha.tgz#bfc818c8f84c47edd5d588d2975ef5d970fc872e"
+  integrity sha512-On6ulvq4rHa17FO5bfpvI6zExlnFP13rUwp4HS6zV6t3fSJK7m52/P4MIT6J3TYBmgO93A6z+cGeTdLWsH6jzQ==
   dependencies:
     prop-types "^15.7.2"
     react "17.0.2"
     react-dom "17.0.2"
     react-imask "^6.4.2"
 
-"@f-ui/markdown@^0.1.2-alpha":
-  version "0.1.2-alpha"
-  resolved "https://registry.yarnpkg.com/@f-ui/markdown/-/markdown-0.1.2-alpha.tgz#d7b8795d00036f17440e68d606975e57281ee891"
-  integrity sha512-pw5cRF3/kOpT2q8W+phcXK4BVnTY0DO6b7mKu+z0OLKYAiZfvWRR2ebCz+U5DR+xyKABSrMuZcZAt+ndyOZpmQ==
+"@f-ui/query@^0.0.19-alpha":
+  version "0.0.19-alpha"
+  resolved "https://registry.yarnpkg.com/@f-ui/query/-/query-0.0.19-alpha.tgz#b3324631ab887d76e32e77a65107de979aa245f6"
+  integrity sha512-3BXHksSMPN+a5c/woVZCyCwPZpplRyio6eBWDb9yEG9kIqToTLqK7/2h0dgnxvLVpQbRci7sMBMHCJIa2XJjZQ==
   dependencies:
-    prop-types "^15.7.2"
-    react "17.0.2"
-    react-dom "17.0.2"
-
-"@f-ui/query@^0.0.18-alpha":
-  version "0.0.18-alpha"
-  resolved "https://registry.yarnpkg.com/@f-ui/query/-/query-0.0.18-alpha.tgz#0d40a0f94dcc9d9f326c8d3ec6e1e95c6e37ed6c"
-  integrity sha512-61jr6JgLH5JNNm3DOzhuuH+nB2m2V6o1kCN96EuhT/GH4RNhXHsZZ0uGLv8o6PheZOe7dGyCEsH26rcp4eaI+w==
-  dependencies:
-    "@f-ui/core" "^0.1.56-alpha"
+    "@f-ui/core" "^0.1.57-alpha"
     axios "^0.26.1"
     prop-types "^15.7.2"
     react "17.0.2"

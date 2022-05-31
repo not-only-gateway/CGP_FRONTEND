@@ -1,12 +1,22 @@
 import React, {useCallback, useContext, useEffect, useMemo, useRef, useState} from "react";
 import PropTypes from "prop-types";
-import {AlertProvider, Button, DataRow, Modal, Switcher, Tab, Tabs, TextField} from "@f-ui/core";
-import env from '../env.json'
+import {
+    AlertProvider,
+    Button,
+    DataRow,
+    Dropdown,
+    DropdownOptions,
+    Modal,
+    Switcher,
+    Tab,
+    Tabs,
+    TextField, ThemeContext
+} from "@f-ui/core";
 import getQuery from "../utils/getQuery";
 import {KEYS, unit} from "../templates/KEYS";
 import styles from "../styles/Home.module.css";
 
-import {List, useQuery, useRequest, Avatar} from "@f-ui/query";
+import {Avatar, List, useQuery, useRequest} from "@f-ui/query";
 import FormTemplate from "../ext/FormTemplate";
 import {COLLABORATOR} from "../templates/forms/COLLABORATOR";
 import Cookies from "universal-cookie/lib";
@@ -14,16 +24,24 @@ import AdminContext from "../ext/wrapper/AdminContext";
 import QRCode from 'qrcode'
 import html2canvas from "html2canvas";
 import ENV from "../env";
-import sendMail from "../ext/mail/sendMail";
 
+const SUFFIX_EMAIL = '@aeb.gov.br'
 
 export default function CollaboratorList() {
     const isADM = useContext(AdminContext)
-    console.log(isADM)
     const [current, setCurrent] = useState()
-    const hook = useQuery(getQuery('collaborator'), [{asc: true, desc: false, key: 'name'}], [{
-        equal: true, key: 'active', value: true, hidden: true
-    }])
+    const filters = useMemo(() => {
+        if (isADM)
+            return []
+        return [{
+            equal: true, key: 'active', value: true, hidden: true
+        }]
+    }, [isADM])
+    const hook = useQuery(getQuery('collaborator'), filters)
+    useEffect(() => {
+        hook.clean()
+    }, [isADM])
+
 
     const {make} = useRequest(false)
     const keys = useMemo(() => {
@@ -46,18 +64,19 @@ export default function CollaboratorList() {
                 obj={COLLABORATOR}
                 submit={(data) => {
                     const id = current.id
-
-                    console.log(data)
+                    const cpf = data.cpf.replaceAll('.', '').replaceAll('-', '')
                     const dataParsed = {
                         ...data,
-                        id: data.id,
-                        cpf: data.cpf.replaceAll('.', '').replaceAll('-', ''),
+                        id: data.id ? data.id : cpf,
+                        cpf,
                         commissioned: data.commissioned?.id,
                         effective: data.effective?.id,
                         unit: data.unit?.acronym,
+                        superior: data.superior?.id,
                         marital_status: data.marital_status?.id,
                         instruction: data.instruction?.id,
                         linkage: data.linkage?.id,
+                        email: data.email ? (data.email.includes(SUFFIX_EMAIL) ? data.email : data.email + SUFFIX_EMAIL) : undefined
                     }
 
                     make({
@@ -120,9 +139,12 @@ function User({current, keys, setCurrent}) {
     }, [])
     const canvasRef = useRef()
     const [open, setOpen] = useState(0)
-    const [report, setReport] = useState(false)
     const [reportData, setReportData] = useState('')
-
+    const [birthMessage, setBirthMessage] = useState('')
+    const isBirthDay = useMemo(() => {
+        return true
+    }, [])
+    const themeProvider = useContext(ThemeContext)
     const ownProfile = useMemo(() => {
         const e = localStorage.getItem('email')
         return current && e !== null && current.email.toLowerCase().trim() === e.toLowerCase().trim()
@@ -146,167 +168,161 @@ function User({current, keys, setCurrent}) {
         ]
     }, [])
     return (
-        <>
-            <Modal
-                open={report}
-                handleClose={() => setReport(false)}
-                blurIntensity={'1px'}
-                className={styles.reportModal}
-                wrapperClassName={styles.reportWrapperModal}>
-                <TextField
-                    value={reportData}
-                    label={'Mensagem'}
-                    placeholder={'Descreva o erro'}
-                    handleChange={e => setReportData(e.target.value)}
-                    variant={'area'}
-                />
-                <Button
-                    variant={"filled"}
-                    className={styles.buttonDownload}
-                    disabled={reportData.length === 0}
-                    onClick={(e) => {
-                        const opts = {
-                            subject: 'REPORT - Erro dado colaborador',
-                            html: `
-                            <h3>Pedido</h3>
-                            <p>
-                                ${reportData}
-                            </p>
-                            <h3>Dado no momento da mensagem</h3>
-                            <code>
-                            <pre>${JSON.stringify(current, null, 4)}</pre>
-                            </code>
-                            <h3>Data do pedido</h3>
-                            <p>
-                                ${(new Date()).toDateString()}
-                            </p>
-                            `,
-                            text: '',
-                        };
-
-                        //
-                        // Promise.all(env.emails.map(e => sendMail({...opts, to: e}, smtpConfig)))
-                        //     .then(() => {
-                        //         alert.pushAlert('Mensagem enviada', 'success')
-                        //         setReport(false)
-                        //         setReportData('')
-                        //     }).catch(e => {
-                        //     alert.pushAlert('Erro no envio', 'error')
-                        //     setReport(false)
-                        //     setReportData('')
-                        // })
-                    }}>
-                    Enviar
-                </Button>
-            </Modal>
-            {report ? null : <Modal
-                animationStyle={'slide-right'}
-                className={styles.modal}
-                blurIntensity={'1px'}
-                wrapperClassName={styles.modalWrapper}
-                open={current !== undefined}
-                handleClose={() => {
-                    console.log('CLOSING', report)
-                    if (!report)
-                        setCurrent(undefined)
-                }}
-            >
-                <Tabs open={open} setOpen={setOpen} className={styles.modalContent}>
-                    <Tab label={'Dados'} className={styles.modalTab}>
-                        <Avatar
-                            alt={current?.name}
-                            src={current?.image}
-                            size={"huge"}
-                            outlined={true}
+        <Modal
+            animationStyle={'slide-right'}
+            className={styles.modal}
+            blurIntensity={'1px'}
+            wrapperClassName={styles.modalWrapper}
+            open={current !== undefined}
+            handleClose={() => setCurrent(undefined)}
+        >
+            <Tabs open={open} setOpen={setOpen} className={styles.modalContent}>
+                <Tab label={'Dados'} className={styles.modalTab}>
+                    <Avatar
+                        alt={current?.name}
+                        src={current?.image}
+                        size={"huge"}
+                        outlined={true}
+                    />
+                    <h2>{current?.name}</h2>
+                    {current ?
+                        <DataRow
+                            keys={allKeys}
+                            asCard={true} selfContained={true}
+                            object={current}
+                            className={styles.selectedCard}
                         />
-                        <h2>{current?.name}</h2>
-                        {current ?
-                            <DataRow
-                                keys={allKeys}
-                                asCard={true} selfContained={true}
-                                object={current}
-                                className={styles.selectedCard}
-                            />
-                            :
-                            undefined
-                        }
+                        :
+                        undefined
+                    }
+                    <div className={styles.floating}>
+                        {isBirthDay && !ownProfile ?
+                            <Dropdown className={styles.report} hideArrow={true}
+                                      styles={{'--fabric-accent-color': '#ff5555'}}
+                                      wrapperClassname={[styles.contentModal, themeProvider.dark ? styles.dark : styles.light].join(' ')}>
+                                <div className={styles.contentInput}>
+                                    <span style={{color: '#ff5555'}} className={'material-icons-round'}>cake</span>
+                                    Parabenizar aniversariante
+                                </div>
+                                <DropdownOptions>
+                                    <TextField
+                                        value={birthMessage}
+                                        label={'Mensagem'}
+                                        placeholder={'Feliz aniversário...'}
+                                        handleChange={e => setBirthMessage(e.target.value)}
+                                        variant={'area'}
+                                    />
+                                    <Button
+                                        variant={"filled"}
+                                        className={styles.buttonDownload}
+                                        disabled={birthMessage.length === 0}
+                                        onClick={(e) => {
 
-                        {ownProfile ?
-                            <Button onClick={() => setReport(true)} className={styles.report} variant={"filled"}>Reportar
-                                erro no dado</Button> : null}
+                                        }}>
+                                        Enviar
+                                    </Button>
+                                </DropdownOptions>
+                            </Dropdown> : null}
 
-                    </Tab>
-                    <Tab label={'Cartão virtual'} className={styles.modalTab}>
-                        <fieldset className={styles.qrCode}>
-                            <legend>Cartão virtual</legend>
-                            <div ref={canvasRef} className={styles.cardWrapper}>
+                        {!ownProfile ?
+                            <Dropdown className={styles.report} hideArrow={true}
+                                      wrapperClassname={[styles.contentModal, themeProvider.dark ? styles.dark : styles.light].join(' ')}>
+                                <div className={styles.contentInput}>
+                                    <span className={'material-icons-round'}>bug_report</span>
+                                    Reportar erro no dado
+                                </div>
+                                <DropdownOptions>
+                                    <TextField
+                                        value={reportData}
+                                        label={'Mensagem'}
+                                        placeholder={'Descrição'}
+                                        handleChange={e => setReportData(e.target.value)}
+                                        variant={'area'}
+                                    />
+                                    <Button
+                                        variant={"filled"}
+                                        className={styles.buttonDownload}
+                                        disabled={reportData.length === 0}
+                                        onClick={(e) => {
 
-                                <img src={'./ass.png'} alt={'assinatura'} className={styles.imgData}/>
-                                <div className={styles.cardInfo}>
-                                    <div style={{fontSize: '8px'}}>
-                                        {current.name}
-                                    </div>
-                                    <div>
-                                        {current.role}
-                                    </div>
-                                    <div>
-                                        {current.unit?.name}
-                                    </div>
-                                    <div>
-                                        {current.directory}
-                                    </div>
-                                    <div style={{fontSize: '8px'}}>
-                                        Agência Espacial Brasileira
-                                    </div>
-                                    <div>
-                                        (61) 2033-{current.extension}&nbsp;&nbsp;&nbsp;&nbsp;{current.email}
-                                    </div>
+                                        }}>
+                                        Enviar
+                                    </Button>
+                                </DropdownOptions>
+                            </Dropdown> : null}
+
+                    </div>
+                </Tab>
+                <Tab label={'Cartão virtual'} className={styles.modalTab}>
+                    <fieldset className={styles.qrCode}>
+                        <legend>Cartão virtual</legend>
+                        <div ref={canvasRef} className={styles.cardWrapper}>
+
+                            <img src={'./ass.png'} alt={'assinatura'} className={styles.imgData}/>
+                            <div className={styles.cardInfo}>
+                                <div style={{fontSize: '8px'}}>
+                                    {current.name}
+                                </div>
+                                <div>
+                                    {current.role}
+                                </div>
+                                <div>
+                                    {current.unit?.name}
+                                </div>
+                                <div>
+                                    {current.directory}
+                                </div>
+                                <div style={{fontSize: '8px'}}>
+                                    Agência Espacial Brasileira
+                                </div>
+                                <div>
+                                    (61) 2033-{current.extension}&nbsp;&nbsp;&nbsp;&nbsp;{current.email}
                                 </div>
                             </div>
+                        </div>
 
-                            <Button
-                                variant={"filled"}
+                        <Button
+                            variant={"filled"}
+                            className={styles.buttonDownload}
+                            onClick={(e) => {
+                                html2canvas(canvasRef.current, {scale: 4, backgroundColor: null}).then(canvas => {
+                                    document.body.appendChild(canvas);
+                                    const element = document.createElement('a');
+                                    element.setAttribute('href', canvas.toDataURL());
+                                    element.setAttribute('download', 'Cartão virtual' + current.name);
+                                    element.style.display = 'none';
+                                    document.body.appendChild(element);
+                                    element.click();
+                                    document.body.removeChild(element);
+                                })
+                            }}>
+                                <span className={'material-icons-round'}
+                                      style={{fontSize: '1.1rem'}}>file_download</span>
+                            Download
+                        </Button>
+                    </fieldset>
+                    <fieldset className={styles.qrCode}>
+                        <legend>Contato</legend>
+                        <canvas ref={ref}/>
+                        <Button variant={"filled"}
                                 className={styles.buttonDownload}
                                 onClick={(e) => {
-                                    html2canvas(canvasRef.current, {scale: 4, backgroundColor: null}).then(canvas => {
-                                        document.body.appendChild(canvas);
-                                        const element = document.createElement('a');
-                                        element.setAttribute('href', canvas.toDataURL());
-                                        element.setAttribute('download', 'Cartão virtual' + current.name);
-                                        element.style.display = 'none';
-                                        document.body.appendChild(element);
-                                        element.click();
-                                        document.body.removeChild(element);
-                                    })
+                                    const element = document.createElement('a');
+                                    element.setAttribute('href', e.target.previousSibling.toDataURL());
+                                    element.setAttribute('download', 'QR-CODE-' + current.name);
+                                    element.style.display = 'none';
+                                    document.body.appendChild(element);
+                                    element.click();
+                                    document.body.removeChild(element);
                                 }}>
                                 <span className={'material-icons-round'}
                                       style={{fontSize: '1.1rem'}}>file_download</span>
-                                Download
-                            </Button>
-                        </fieldset>
-                        <fieldset className={styles.qrCode}>
-                            <legend>Contato</legend>
-                            <canvas ref={ref}/>
-                            <Button variant={"filled"}
-                                    className={styles.buttonDownload}
-                                    onClick={(e) => {
-                                        const element = document.createElement('a');
-                                        element.setAttribute('href', e.target.previousSibling.toDataURL());
-                                        element.setAttribute('download', 'QR-CODE-' + current.name);
-                                        element.style.display = 'none';
-                                        document.body.appendChild(element);
-                                        element.click();
-                                        document.body.removeChild(element);
-                                    }}>
-                                <span className={'material-icons-round'}
-                                      style={{fontSize: '1.1rem'}}>file_download</span>
-                                Download
-                            </Button>
-                        </fieldset>
-                    </Tab>
-                </Tabs>
-            </Modal>}
-        </>
+                            Download
+                        </Button>
+                    </fieldset>
+                </Tab>
+            </Tabs>
+        </Modal>
     )
 }
 

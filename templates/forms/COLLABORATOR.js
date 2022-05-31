@@ -1,9 +1,10 @@
 import {KEYS} from "../KEYS";
 import getQuery from "../../utils/getQuery";
+import NATIONALITIES from "../NATIONALITIES";
 
 export const COLLABORATOR = [{
     title: 'Informações básicas',
-    groups: '3 2 3 3 2',
+    groups: '3 2 3 3 3',
     rowGap: '4px',
     columnGap: '16px',
     inputs: [
@@ -57,12 +58,11 @@ export const COLLABORATOR = [{
             required: false,
             disabled: false,
             key: 'superior',
-            type: 'text',
             width: '100%',
-            customProps: {
-                maxLength: 12
-            }
+            query: getQuery('collaborator'),
+            keys: KEYS.COLLABORATOR_SIMPLE
         },
+
         {
             label: 'Nascimento',
             placeHolder: 'Nascimento',
@@ -97,20 +97,20 @@ export const COLLABORATOR = [{
             required: true,
             disabled: false,
             key: 'nationality',
-            type: 'text',
+            type: 'select',
+            customProps: {
+                choices: NATIONALITIES
+            },
             width: '100%',
         },
         {
-            label: 'PNE',
-            placeHolder: 'PNE',
+            label: 'Pessoa com necessidades especiais',
+            placeHolder: 'Pessoa com necessidades especiais',
             required: false,
             disabled: false,
             key: 'pne',
-            type: 'text',
-            width: '100%',
-            customProps: {
-                maxLength: 3
-            }
+            type: 'check',
+            width: '100%'
         },
         {
             label: 'Data admissão',
@@ -137,6 +137,18 @@ export const COLLABORATOR = [{
             width: '100%',
         },
         {
+            label: 'Email corporativo',
+            placeHolder: 'Email corporativo',
+            required: false,
+            disabled: false,
+            key: 'email',
+            type: 'text',
+            customProps: {
+                maskEnd: '@aeb.gov.br'
+            },
+            width: '100%',
+        },
+        {
             label: 'Ramal',
             placeHolder: 'Ramal',
             required: false,
@@ -158,22 +170,21 @@ export const COLLABORATOR = [{
             type: 'text',
             width: '100%',
         },
+
         {
-            label: 'Email corporativo',
-            placeHolder: 'Email corporativo',
-            required: false,
-            disabled: false,
-            key: 'email',
-            type: 'text',
-            width: '100%',
-        },
-        {
-            label: 'Grau',
-            placeHolder: 'Grau',
+            label: 'Grau hierárquico',
+            placeHolder: 'Grau hierárquico',
             required: false,
             disabled: false,
             key: 'degree',
-            type: 'text',
+            type: 'select',
+            customProps: {
+                choices: [
+                    {key: 'baixo', value: 'Baixo'},
+                    {key: 'medio', value: 'Médio'},
+                    {key: 'alto', value: 'Alto'}
+                ]
+            },
             width: '100%',
         }
     ]

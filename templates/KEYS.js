@@ -30,6 +30,7 @@ const collab = [{key: 'name', type: 'string', label: 'Nome', visible: true},
     // {key: 'email', type: 'string', label: 'Email', visible: true},
 
     {
+        additionalWidth: '-50%',
         key: 'unit',
         type: 'object',
         subfieldKey: 'acronym',
@@ -106,6 +107,12 @@ export const KEYS = {
             key: 'name',
             type: 'string',
             label: 'Nome',
+            visible: true
+        },
+        {
+            key: 'active',
+            type: 'bool',
+            label: 'Ativo',
             visible: true
         },
         {key: 'birth', type: 'date', label: 'Data de nascimento', visible: true, hoursOffset: 4},
