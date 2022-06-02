@@ -1,1026 +1,1536 @@
 export default [
     {
-        value: "Afeganistão",
-        key: "AF"
+        "key": "afegãne",
+        "value": "afegãne",
+
+
     },
     {
-        value: "África do Sul",
-        key: "ZA"
+        "key": "sul-africana",
+        "value": "sul-africana",
+
+
     },
     {
-        value: "Albânia",
-        key: "AL"
+        "key": "albanesa",
+        "value": "albanesa",
+
+
     },
     {
-        value: "Alemanha",
-        key: "DE"
+        "key": "alemã",
+        "value": "alemã",
+
+
     },
     {
-        value: "Andorra",
-        key: "AD"
+        "key": "andorrana",
+        "value": "andorrana",
+
+
     },
     {
-        value: "Angola",
-        key: "AO"
+        "key": "angolana",
+        "value": "angolana",
+
+
     },
     {
-        value: "Anguilla",
-        key: "AI"
+        "key": "anguillana",
+        "value": "anguillana",
+
+
     },
     {
-        value: "Antártida",
-        key: "AQ"
+        "key": "de antártida",
+        "value": "de antártida",
+
+
     },
     {
-        value: "Antígua e Barbuda",
-        key: "AG"
+        "key": "antiguana",
+        "value": "antiguana",
+
+
     },
     {
-        value: "Arábia Saudita",
-        key: "SA"
+        "key": "saudita",
+        "value": "saudita"
+
+
     },
     {
-        value: "Argélia",
-        key: "DZ"
+        "key": "argelina",
+        "value": "argelina",
+
+
     },
     {
-        value: "Argentina",
-        key: "AR"
+        "key": "argentina",
+        "value": "argentina",
+
+
     },
     {
-        value: "Armênia",
-        key: "AM"
+        "key": "armênia",
+        "value": "armênia",
+
+
     },
     {
-        value: "Aruba",
-        key: "AW"
+        "key": "arubana",
+        "value": "arubana",
+
+
     },
     {
-        value: "Austrália",
-        key: "AU"
+        "key": "australiana",
+        "value": "australiana",
+
+
     },
     {
-        value: "Áustria",
-        key: "AT"
+        "key": "austríaca",
+        "value": "austríaca",
+
+
     },
     {
-        value: "Azerbaijão",
-        key: "AZ"
+        "key": "azerbaijano",
+        "value": "azerbaijano",
+
+
     },
     {
-        value: "Bahamas",
-        key: "BS"
+        "key": "bahamense",
+        "value": "bahamense",
+
+
     },
     {
-        value: "Bahrein",
-        key: "BH"
+        "key": "barenita",
+        "value": "barenita",
+
+
     },
     {
-        value: "Bangladesh",
-        key: "BD"
+        "key": "bengali",
+        "value": "bengali",
+
+
     },
     {
-        value: "Barbados",
-        key: "BB"
+        "key": "barbadiana",
+        "value": "barbadiana",
+
+
     },
     {
-        value: "Belarus",
-        key: "BY"
+        "key": "bielo-russa",
+        "value": "bielo-russa",
+
+
     },
     {
-        value: "Bélgica",
-        key: "BE"
+        "key": "belga",
+        "value": "belga",
+
+
     },
     {
-        value: "Belize",
-        key: "BZ"
+        "key": "belizenha",
+        "value": "belizenha",
+
+
     },
     {
-        value: "Benin",
-        key: "BJ"
+        "key": "beninense",
+        "value": "beninense",
+
+
     },
     {
-        value: "Bermudas",
-        key: "BM"
+        "key": "bermudiana",
+        "value": "bermudiana",
+
+
     },
     {
-        value: "Bolívia",
-        key: "BO"
+        "key": "boliviana",
+        "value": "boliviana",
+
+
     },
     {
-        value: "Bósnia-Herzegóvina",
-        key: "BA"
+        "key": "bósnia",
+        "value": "bósnia"
+
+
     },
     {
-        value: "Botsuana",
-        key: "BW"
+        "key": "betchuana",
+        "value": "betchuana",
+
+
     },
     {
-        value: "Brasil",
-        key: "BR"
+        "key": "brasileira",
+        "value": "brasileira",
+
+
     },
     {
-        value: "Brunei",
-        key: "BN"
+        "key": "bruneiana",
+        "value": "bruneiana",
+
+
     },
     {
-        value: "Bulgária",
-        key: "BG"
+        "key": "búlgara",
+        "value": "búlgara",
+
+
     },
     {
-        value: "Burkina Fasso",
-        key: "BF"
+        "key": "burquinês",
+        "value": "burquinês"
+
+
     },
     {
-        value: "Burundi",
-        key: "BI"
+        "key": "burundinesa",
+        "value": "burundinesa",
+
+
     },
     {
-        value: "Butão",
-        key: "BT"
+        "key": "butanesa",
+        "value": "butanesa",
+
+
     },
     {
-        value: "Cabo Verde",
-        key: "CV"
+        "key": "cabo-verdiana",
+        "value": "cabo-verdiana",
+
+
     },
     {
-        value: "Camarões",
-        key: "CM"
+        "key": "camaronesa",
+        "value": "camaronesa",
+
+
     },
     {
-        value: "Camboja",
-        key: "KH"
+        "key": "cambojana",
+        "value": "cambojana",
+
+
     },
     {
-        value: "Canadá",
-        key: "CA"
+        "key": "canadense",
+        "value": "canadense",
+
+
     },
     {
-        value: "Canárias",
-        key: "IC"
+        "key": "canário",
+        "value": "canário",
+
+
     },
     {
-        value: "Cazaquistão",
-        key: "KZ"
+        "key": "cazaque",
+        "value": "cazaque"
+
+
     },
     {
-        value: "Ceuta e Melilla",
-        key: "EA"
+        "key": "de ceuta e melilla",
+        "value": "de ceuta e melilla",
+
+
     },
     {
-        value: "Chade",
-        key: "TD"
+        "key": "chadiana",
+        "value": "chadiana",
+
+
     },
     {
-        value: "Chile",
-        key: "CL"
+        "key": "chilena",
+        "value": "chilena",
+
+
     },
     {
-        value: "China",
-        key: "CN"
+        "key": "chinesa",
+        "value": "chinesa",
+
+
     },
     {
-        value: "Chipre",
-        key: "CY"
+        "key": "cipriota",
+        "value": "cipriota",
+
+
     },
     {
-        value: "Cingapura",
-        key: "SG"
+        "key": "cingapuriana",
+        "value": "cingapuriana",
+
+
     },
     {
-        value: "Colômbia",
-        key: "CO"
+        "key": "colombiana",
+        "value": "colombiana",
+
+
     },
     {
-        value: "Comores",
-        key: "KM"
+        "key": "comorense",
+        "value": "comorense",
+
+
     },
     {
-        value: "Congo",
-        key: "CG"
+        "key": "congolesa",
+        "value": "congolesa",
+
+
     },
     {
-        value: "Coréia do Norte",
-        key: "KP"
+        "key": "norte-coreano",
+        "value": "norte-coreano",
+
+
     },
     {
-        value: "Coréia do Sul",
-        key: "KR"
+        "key": "norte-coreana",
+        "value": "norte-coreana",
+
+
     },
     {
-        value: "Costa do Marfim",
-        key: "CI"
+        "key": "marfinense",
+        "value": "marfinense"
+
+
     },
     {
-        value: "Costa Rica",
-        key: "CR"
+        "key": "costarriquenha",
+        "value": "costarriquenha",
+
+
     },
     {
-        value: "Croácia",
-        key: "HR"
+        "key": "croata",
+        "value": "croata",
+
+
     },
     {
-        value: "Cuba",
-        key: "CU"
+        "key": "cubana",
+        "value": "cubana",
+
+
     },
     {
-        value: "Curaçao",
-        key: "CW"
+        "key": "curaçauense",
+        "value": "curaçauense",
+
+
     },
     {
-        value: "Diego Garcia",
-        key: "DG"
+        "key": "chagositano",
+        "value": "chagositano",
+
+
     },
     {
-        value: "Dinamarca",
-        key: "DK"
+        "key": "dinamarquesa",
+        "value": "dinamarquesa",
+
+
     },
     {
-        value: "Djibuti",
-        key: "DJ"
+        "key": "djibutiana",
+        "value": "djibutiana",
+
+
     },
     {
-        value: "Dominica",
-        key: "DM"
+        "key": "dominiquense",
+        "value": "dominiquense",
+
+
     },
     {
-        value: "Egito",
-        key: "EG"
+        "key": "egípcia",
+        "value": "egípcia",
+
+
     },
     {
-        value: "El Salvador",
-        key: "SV"
+        "key": "salvadorenha",
+        "value": "salvadorenha",
+
+
     },
     {
-        value: "Emirados Árabes Unidos",
-        key: "AE"
+        "key": "árabe",
+        "value": "árabe"
+
+
     },
     {
-        value: "Equador",
-        key: "EC"
+        "key": "equatoriana",
+        "value": "equatoriana",
+
+
     },
     {
-        value: "Eritréia",
-        key: "ER"
+        "key": "eritreia",
+        "value": "eritreia",
+
+
     },
     {
-        value: "Eslováquia",
-        key: "SK"
+        "key": "eslovaco",
+        "value": "eslovaco",
+
+
     },
     {
-        value: "Eslovênia",
-        key: "SI"
+        "key": "esloveno",
+        "value": "esloveno",
+
+
     },
     {
-        value: "Espanha",
-        key: "ES"
+        "key": "espanhola",
+        "value": "espanhola",
+
+
     },
     {
-        value: "Estados Unidos",
-        key: "US"
+        "key": "norte-americana",
+        "value": "norte-americana",
+
+
     },
     {
-        value: "Estônia",
-        key: "EE"
+        "key": "estoniana",
+        "value": "estoniana",
+
+
     },
     {
-        value: "Etiópia",
-        key: "ET"
+        "key": "etíope",
+        "value": "etíope",
+
+
     },
     {
-        value: "Fiji",
-        key: "FJ"
+        "key": "fijiana",
+        "value": "fijiana",
+
+
     },
     {
-        value: "Filipinas",
-        key: "PH"
+        "key": "filipina",
+        "value": "filipina",
+
+
     },
     {
-        value: "Finlândia",
-        key: "FI"
+        "key": "finlandesa",
+        "value": "finlandesa",
+
+
     },
     {
-        value: "França",
-        key: "FR"
+        "key": "francesa",
+        "value": "francesa",
+
+
     },
     {
-        value: "Gabão",
-        key: "GA"
+        "key": "gabonesa",
+        "value": "gabonesa",
+
+
     },
     {
-        value: "Gâmbia",
-        key: "GM"
+        "key": "gambiana",
+        "value": "gambiana",
+
+
     },
     {
-        value: "Gana",
-        key: "GH"
+        "key": "ganense",
+        "value": "ganense",
+
+
     },
     {
-        value: "Geórgia",
-        key: "GE"
+        "key": "georgiana",
+        "value": "georgiana",
+
+
     },
     {
-        value: "Gibraltar",
-        key: "GI"
+        "key": "gibraltariana",
+        "value": "gibraltariana",
+
+
     },
     {
-        value: "Grã-Bretanha (Reino Unido, UK)",
-        key: "GB"
+        "key": "inglesa",
+        "value": "inglesa"
+
+
     },
     {
-        value: "Granada",
-        key: "GD"
+        "key": "granadina",
+        "value": "granadina",
+
+
     },
     {
-        value: "Grécia",
-        key: "GR"
+        "key": "grega",
+        "value": "grega",
+
+
     },
     {
-        value: "Groelândia",
-        key: "GL"
+        "key": "groenlandesa",
+        "value": "groenlandesa",
+
+
     },
     {
-        value: "Guadalupe",
-        key: "GP"
+        "key": "guadalupense",
+        "value": "guadalupense",
+
+
     },
     {
-        value: "Guam (Território dos Estados Unidos)",
-        key: "GU"
+        "key": "guamês",
+        "value": "guamês"
+
+
     },
     {
-        value: "Guatemala",
-        key: "GT"
+        "key": "guatemalteca",
+        "value": "guatemalteca",
+
+
     },
     {
-        value: "Guernsey",
-        key: "GG"
+        "key": "guernesiano",
+        "value": "guernesiano",
+
+
     },
     {
-        value: "Guiana",
-        key: "GY"
+        "key": "guianense",
+        "value": "guianense",
+
+
     },
     {
-        value: "Guiana Francesa",
-        key: "GF"
+        "key": "franco-guianense",
+        "value": "franco-guianense",
+
+
     },
     {
-        value: "Guiné",
-        key: "GN"
+        "key": "guinéu-equatoriano ou equatoguineana",
+        "value": "guinéu-equatoriano ou equatoguineana",
+
+
     },
     {
-        value: "Guiné Equatorial",
-        key: "GQ"
+        "key": "guinéu-equatoriano",
+        "value": "guinéu-equatoriano",
+
+
     },
     {
-        value: "Guiné-Bissau",
-        key: "GW"
+        "key": "guineense",
+        "value": "guineense",
+
+
     },
     {
-        value: "Haiti",
-        key: "HT"
+        "key": "haitiana",
+        "value": "haitiana",
+
+
     },
     {
-        value: "Holanda",
-        key: "NL"
+        "key": "holandês",
+        "value": "holandês",
+
+
     },
     {
-        value: "Honduras",
-        key: "HN"
+        "key": "hondurenha",
+        "value": "hondurenha",
+
+
     },
     {
-        value: "Hong Kong",
-        key: "HK"
+        "key": "hong-konguiana ou chinesa",
+        "value": "hong-konguiana ou chinesa",
+
+
     },
     {
-        value: "Hungria",
-        key: "HU"
+        "key": "húngara",
+        "value": "húngara",
+
+
     },
     {
-        value: "Iêmen",
-        key: "YE"
+        "key": "iemenita",
+        "value": "iemenita",
+
+
     },
     {
-        value: "Ilha Bouvet",
-        key: "BV"
+        "key": "da ilha bouvet",
+        "value": "da ilha bouvet",
+
+
     },
     {
-        value: "Ilha de Ascensão",
-        key: "AC"
+        "key": "da ilha de ascensão",
+        "value": "da ilha de ascensão",
+
+
     },
     {
-        value: "Ilha de Clipperton",
-        key: "CP"
+        "key": "da ilha de clipperton",
+        "value": "da ilha de clipperton",
+
+
     },
     {
-        value: "Ilha de Man",
-        key: "IM"
+        "key": "manês",
+        "value": "manês"
+
+
     },
     {
-        value: "Ilha Natal",
-        key: "CX"
+        "key": "natalense",
+        "value": "natalense",
+
+
     },
     {
-        value: "Ilha Pitcairn",
-        key: "PN"
+        "key": "pitcairnense",
+        "value": "pitcairnense",
+
+
     },
     {
-        value: "Ilha Reunião",
-        key: "RE"
+        "key": "reunionense",
+        "value": "reunionense",
+
+
     },
     {
-        value: "Ilhas Aland",
-        key: "AX"
+        "key": "alandês",
+        "value": "alandês"
+
+
     },
     {
-        value: "Ilhas Cayman",
-        key: "KY"
+        "key": "caimanês",
+        "value": "caimanês"
+
+
     },
     {
-        value: "Ilhas Cocos",
-        key: "CC"
+        "key": "coquense",
+        "value": "coquense"
+
+
     },
     {
-        value: "Ilhas Cook",
-        key: "CK"
+        "key": "cookense",
+        "value": "cookense",
+
+
     },
     {
-        value: "Ilhas Faroes",
-        key: "FO"
+        "key": "faroense",
+        "value": "faroense"
+
+
     },
     {
-        value: "Ilhas Geórgia do Sul e Sandwich do Sul",
-        key: "GS"
+        "key": "das ilhas geórgia do sul e sandwich do sul",
+        "value": "das ilhas geórgia do sul e sandwich do sul",
+
+
     },
     {
-        value: "Ilhas Heard e McDonald (Território da Austrália)",
-        key: "HM"
+        "key": "das ilhas heard e mcdonald",
+        "value": "das ilhas heard e mcdonald"
+
+
     },
     {
-        value: "Ilhas Malvinas",
-        key: "FK"
+        "key": "malvinense",
+        "value": "malvinense"
+
+
     },
     {
-        value: "Ilhas Marianas do Norte",
-        key: "MP"
+        "key": "norte-marianense",
+        "value": "norte-marianense"
+
+
     },
     {
-        value: "Ilhas Marshall",
-        key: "MH"
+        "key": "marshallino",
+        "value": "marshallino"
+
+
     },
     {
-        value: "Ilhas Menores dos Estados Unidos",
-        key: "UM"
+        "key": "das ilhas menores afastadas",
+        "value": "das ilhas menores afastadas"
+
+
     },
     {
-        value: "Ilhas Norfolk",
-        key: "NF"
+        "key": "norfolquino",
+        "value": "norfolquino"
+
+
     },
     {
-        value: "Ilhas Salomão",
-        key: "SB"
+        "key": "salomônico",
+        "value": "salomônico"
+
+
     },
     {
-        value: "Ilhas Seychelles",
-        key: "SC"
+        "key": "seichelense",
+        "value": "seichelense"
+
+
     },
     {
-        value: "Ilhas Tokelau",
-        key: "TK"
+        "key": "toquelauano",
+        "value": "toquelauano"
+
+
     },
     {
-        value: "Ilhas Turks e Caicos",
-        key: "TC"
+        "key": "turquês",
+        "value": "turquês"
+
+
     },
     {
-        value: "Ilhas Virgens (Estados Unidos)",
-        key: "VI"
+        "key": "virginense",
+        "value": "virginense"
+
+
     },
     {
-        value: "Ilhas Virgens (Inglaterra)",
-        key: "VG"
+        "key": "virginense",
+        "value": "virginense"
+
+
     },
     {
-        value: "Índia",
-        key: "IN"
+        "key": "indiano",
+        "value": "indiano",
+
+
     },
     {
-        value: "Indonésia",
-        key: "ID"
+        "key": "indonésia",
+        "value": "indonésia",
+
+
     },
     {
-        value: "Irã",
-        key: "IR"
+        "key": "iraniano",
+        "value": "iraniano",
+
+
     },
     {
-        value: "Iraque",
-        key: "IQ"
+        "key": "iraquiana",
+        "value": "iraquiana",
+
+
     },
     {
-        value: "Irlanda",
-        key: "IE"
+        "key": "irlandesa",
+        "value": "irlandesa",
+
+
     },
     {
-        value: "Islândia",
-        key: "IS"
+        "key": "islandesa",
+        "value": "islandesa",
+
+
     },
     {
-        value: "Israel",
-        key: "IL"
+        "key": "israelense",
+        "value": "israelense",
+
+
     },
     {
-        value: "Itália",
-        key: "IT"
+        "key": "italiana",
+        "value": "italiana",
+
+
     },
     {
-        value: "Jamaica",
-        key: "JM"
+        "key": "jamaicana",
+        "value": "jamaicana",
+
+
     },
     {
-        value: "Japão",
-        key: "JP"
+        "key": "japonesa",
+        "value": "japonesa",
+
+
     },
     {
-        value: "Jersey",
-        key: "JE"
+        "key": "canalina",
+        "value": "canalina",
+
+
     },
     {
-        value: "Jordânia",
-        key: "JO"
+        "key": "jordaniana",
+        "value": "jordaniana",
+
+
     },
     {
-        value: "Kiribati",
-        key: "KI"
+        "key": "kiribatiana",
+        "value": "kiribatiana",
+
+
     },
     {
-        value: "Kosovo",
-        key: "XK"
+        "key": "kosovar",
+        "value": "kosovar",
+
+
     },
     {
-        value: "Kuait",
-        key: "KW"
+        "key": "kuwaitiano",
+        "value": "kuwaitiano",
+
+
     },
     {
-        value: "Laos",
-        key: "LA"
+        "key": "laosiana",
+        "value": "laosiana",
+
+
     },
     {
-        value: "Lesoto",
-        key: "LS"
+        "key": "lesota",
+        "value": "lesota",
+
+
     },
     {
-        value: "Letônia",
-        key: "LV"
+        "key": "letão",
+        "value": "letão",
+
+
     },
     {
-        value: "Líbano",
-        key: "LB"
+        "key": "libanesa",
+        "value": "libanesa",
+
+
     },
     {
-        value: "Libéria",
-        key: "LR"
+        "key": "liberiana",
+        "value": "liberiana",
+
+
     },
     {
-        value: "Líbia",
-        key: "LY"
+        "key": "líbia",
+        "value": "líbia",
+
+
     },
     {
-        value: "Liechtenstein",
-        key: "LI"
+        "key": "liechtensteiniense",
+        "value": "liechtensteiniense",
+
+
     },
     {
-        value: "Lituânia",
-        key: "LT"
+        "key": "lituana",
+        "value": "lituana",
+
+
     },
     {
-        value: "Luxemburgo",
-        key: "LU"
+        "key": "luxemburguesa",
+        "value": "luxemburguesa",
+
+
     },
     {
-        value: "Macau",
-        key: "MO"
+        "key": "macauense",
+        "value": "macauense",
+
+
     },
     {
-        value: "Macedônia (República Yugoslava)",
-        key: "MK"
+        "key": "macedônio",
+        "value": "macedônio",
+
+
     },
     {
-        value: "Madagascar",
-        key: "MG"
+        "key": "malgaxe",
+        "value": "malgaxe",
+
+
     },
     {
-        value: "Malásia",
-        key: "MY"
+        "key": "malaia",
+        "value": "malaia",
+
+
     },
     {
-        value: "Malaui",
-        key: "MW"
+        "key": "malauiano",
+        "value": "malauiano",
+
+
     },
     {
-        value: "Maldivas",
-        key: "MV"
+        "key": "maldívia",
+        "value": "maldívia",
+
+
     },
     {
-        value: "Mali",
-        key: "ML"
+        "key": "malinesa",
+        "value": "malinesa",
+
+
     },
     {
-        value: "Malta",
-        key: "MT"
+        "key": "maltesa",
+        "value": "maltesa",
+
+
     },
     {
-        value: "Marrocos",
-        key: "MA"
+        "key": "marroquina",
+        "value": "marroquina",
+
+
     },
     {
-        value: "Martinica",
-        key: "MQ"
+        "key": "martiniquense",
+        "value": "martiniquense",
+
+
     },
     {
-        value: "Maurício",
-        key: "MU"
+        "key": "mauriciana",
+        "value": "mauriciana",
+
+
     },
     {
-        value: "Mauritânia",
-        key: "MR"
+        "key": "mauritana",
+        "value": "mauritana",
+
+
     },
     {
-        value: "Mayotte",
-        key: "YT"
+        "key": "maiotense",
+        "value": "maiotense",
+
+
     },
     {
-        value: "México",
-        key: "MX"
+        "key": "mexicana",
+        "value": "mexicana",
+
+
     },
     {
-        value: "Micronésia",
-        key: "FM"
+        "key": "micronésia",
+        "value": "micronésia",
+
+
     },
     {
-        value: "Moçambique",
-        key: "MZ"
+        "key": "moçambicana",
+        "value": "moçambicana",
+
+
     },
     {
-        value: "Moldova",
-        key: "MD"
+        "key": "moldavo",
+        "value": "moldavo",
+
+
     },
     {
-        value: "Mônaco",
-        key: "MC"
+        "key": "monegasca",
+        "value": "monegasca",
+
+
     },
     {
-        value: "Mongólia",
-        key: "MN"
+        "key": "mongol",
+        "value": "mongol",
+
+
     },
     {
-        value: "Montenegro",
-        key: "ME"
+        "key": "montenegra",
+        "value": "montenegra",
+
+
     },
     {
-        value: "Montserrat",
-        key: "MS"
+        "key": "montserratiano",
+        "value": "montserratiano",
+
+
     },
     {
-        value: "Myanma",
-        key: "MM"
+        "key": "birmanês",
+        "value": "birmanês",
+
+
     },
     {
-        value: "Namíbia",
-        key: "NA"
+        "key": "namíbia",
+        "value": "namíbia",
+
+
     },
     {
-        value: "Nauru",
-        key: "NR"
+        "key": "nauruana",
+        "value": "nauruana",
+
+
     },
     {
-        value: "Nepal",
-        key: "NP"
+        "key": "nepalesa",
+        "value": "nepalesa",
+
+
     },
     {
-        value: "Nicarágua",
-        key: "NI"
+        "key": "nicaraguense",
+        "value": "nicaraguense",
+
+
     },
     {
-        value: "Níger",
-        key: "NE"
+        "key": "nigerina",
+        "value": "nigerina",
+
+
     },
     {
-        value: "Nigéria",
-        key: "NG"
+        "key": "nigeriana",
+        "value": "nigeriana",
+
+
     },
     {
-        value: "Niue",
-        key: "NU"
+        "key": "niueana",
+        "value": "niueana",
+
+
     },
     {
-        value: "Noruega",
-        key: "NO"
+        "key": "norueguesa",
+        "value": "norueguesa",
+
+
     },
     {
-        value: "Nova Caledônia",
-        key: "NC"
+        "key": "caledônia",
+        "value": "caledônia",
+
+
     },
     {
-        value: "Nova Zelândia",
-        key: "NZ"
+        "key": "neozelandesa",
+        "value": "neozelandesa",
+
+
     },
     {
-        value: "Omã",
-        key: "OM"
+        "key": "omani",
+        "value": "omani",
+
+
     },
     {
-        value: "Países Baixos Caribenhos",
-        key: "BQ"
+        "key": "dos países baixos caribenhos",
+        "value": "dos países baixos caribenhos",
+
+
     },
     {
-        value: "Palau",
-        key: "PW"
+        "key": "palauense",
+        "value": "palauense",
+
+
     },
     {
-        value: "Palestina",
-        key: "PS"
+        "key": "palestino",
+        "value": "palestino",
+
+
     },
     {
-        value: "Panamá",
-        key: "PA"
+        "key": "zona do canal do panamá",
+        "value": "zona do canal do panamá",
+
+
     },
     {
-        value: "Papua-Nova Guiné",
-        key: "PG"
+        "key": "pauásia",
+        "value": "pauásia",
+
+
     },
     {
-        value: "Paquistão",
-        key: "PK"
+        "key": "paquistanesa",
+        "value": "paquistanesa",
+
+
     },
     {
-        value: "Paraguai",
-        key: "PY"
+        "key": "paraguaia",
+        "value": "paraguaia",
+
+
     },
     {
-        value: "Peru",
-        key: "PE"
+        "key": "peruana",
+        "value": "peruana",
+
+
     },
     {
-        value: "Polinésia Francesa",
-        key: "PF"
+        "key": "franco-polinésia",
+        "value": "franco-polinésia",
+
+
     },
     {
-        value: "Polônia",
-        key: "PL"
+        "key": "polonesa",
+        "value": "polonesa",
+
+
     },
     {
-        value: "Porto Rico",
-        key: "PR"
+        "key": "portorriquenha",
+        "value": "portorriquenha",
+
+
     },
     {
-        value: "Portugal",
-        key: "PT"
+        "key": "portuguesa",
+        "value": "portuguesa",
+
+
     },
     {
-        value: "Qatar",
-        key: "QA"
+        "key": "catarense",
+        "value": "catarense",
+
+
     },
     {
-        value: "Quênia",
-        key: "KE"
+        "key": "queniano",
+        "value": "queniano",
+
+
     },
     {
-        value: "Quirguistão",
-        key: "KG"
+        "key": "quirguiz",
+        "value": "quirguiz",
+
+
     },
     {
-        value: "República Centro-Africana",
-        key: "CF"
+        "key": "centro-africana",
+        "value": "centro-africana",
+
+
     },
     {
-        value: "República Democrática do Congo",
-        key: "CD"
+        "key": "congolesa",
+        "value": "congolesa",
+
+
     },
     {
-        value: "República Dominicana",
-        key: "DO"
+        "key": "dominicana",
+        "value": "dominicana",
+
+
     },
     {
-        value: "República Tcheca",
-        key: "CZ"
+        "key": "tcheco",
+        "value": "tcheco",
+
+
     },
     {
-        value: "Romênia",
-        key: "RO"
+        "key": "romena",
+        "value": "romena",
+
+
     },
     {
-        value: "Ruanda",
-        key: "RW"
+        "key": "ruandesa",
+        "value": "ruandesa",
+
+
     },
     {
-        value: "Rússia (antiga URSS) - Federação Russa",
-        key: "RU"
+        "key": "russa",
+        "value": "russa",
+
+
     },
     {
-        value: "Saara Ocidental",
-        key: "EH"
+        "key": "saariano",
+        "value": "saariano",
+
+
     },
     {
-        value: "Saint-Pierre e Miquelon",
-        key: "PM"
+        "key": "pedro-miquelonense",
+        "value": "pedro-miquelonense",
+
+
     },
     {
-        value: "Samoa Americana",
-        key: "AS"
+        "key": "samoana",
+        "value": "samoana",
+
+
     },
     {
-        value: "Samoa Ocidental",
-        key: "WS"
+        "key": "samoano",
+        "value": "samoano",
+
+
     },
     {
-        value: "San Marino",
-        key: "SM"
+        "key": "samarinês",
+        "value": "samarinês",
+
+
     },
     {
-        value: "Santa Helena",
-        key: "SH"
+        "key": "helenense",
+        "value": "helenense",
+
+
     },
     {
-        value: "Santa Lúcia",
-        key: "LC"
+        "key": "santa-lucense",
+        "value": "santa-lucense",
+
+
     },
     {
-        value: "São Bartolomeu",
-        key: "BL"
+        "key": "são-bartolomeense",
+        "value": "são-bartolomeense",
+
+
     },
     {
-        value: "São Cristóvão e Névis",
-        key: "KN"
+        "key": "são-cristovense",
+        "value": "são-cristovense",
+
+
     },
     {
-        value: "São Martim",
-        key: "MF"
+        "key": "são-martinhense",
+        "value": "são-martinhense",
     },
     {
-        value: "São Martinho",
-        key: "SX"
+        "key": "são-martinhense",
+        "value": "são-martinhense",
+
+
     },
     {
-        value: "São Tomé e Príncipe",
-        key: "ST"
+        "key": "são-tomense",
+        "value": "são-tomense",
+
+
     },
     {
-        value: "São Vicente e Granadinas",
-        key: "VC"
+        "key": "sao-vicentino",
+        "value": "sao-vicentino",
+
+
     },
     {
-        value: "Senegal",
-        key: "SN"
+        "key": "senegalesa",
+        "value": "senegalesa",
+
+
     },
     {
-        value: "Serra Leoa",
-        key: "SL"
+        "key": "leonesa",
+        "value": "leonesa",
+
+
     },
     {
-        value: "Sérvia",
-        key: "RS"
+        "key": "sérvia",
+        "value": "sérvia",
+
+
     },
     {
-        value: "Síria",
-        key: "SY"
+        "key": "síria",
+        "value": "síria",
+
+
     },
     {
-        value: "Somália",
-        key: "SO"
+        "key": "somali",
+        "value": "somali",
+
+
     },
     {
-        value: "Sri Lanka",
-        key: "LK"
+        "key": "cingalesa",
+        "value": "cingalesa",
+
+
     },
     {
-        value: "Suazilândia",
-        key: "SZ"
+        "key": "suazi",
+        "value": "suazi",
+
+
     },
     {
-        value: "Sudão",
-        key: "SD"
+        "key": "sudanesa",
+        "value": "sudanesa",
+
+
     },
     {
-        value: "Sudão do Sul",
-        key: "SS"
+        "key": "sul-sudanês",
+        "value": "sul-sudanês",
+
+
     },
     {
-        value: "Suécia",
-        key: "SE"
+        "key": "sueca",
+        "value": "sueca",
+
+
     },
     {
-        value: "Suíça",
-        key: "CH"
+        "key": "suíça",
+        "value": "suíça",
+
+
     },
     {
-        value: "Suriname",
-        key: "SR"
+        "key": "surinamesa",
+        "value": "surinamesa",
+
+
     },
     {
-        value: "Svalbard",
-        key: "SJ"
+        "key": "svalbardense",
+        "value": "svalbardense",
+
+
     },
     {
-        value: "Tadjiquistão",
-        key: "TJ"
+        "key": "tadjique",
+        "value": "tadjique",
+
+
     },
     {
-        value: "Tailândia",
-        key: "TH"
+        "key": "tailandesa",
+        "value": "tailandesa",
+
+
     },
     {
-        value: "Taiwan",
-        key: "TW"
+        "key": "taiwanês",
+        "value": "taiwanês",
+
+
     },
     {
-        value: "Tanzânia",
-        key: "TZ"
+        "key": "tanzaniana",
+        "value": "tanzaniana",
+
+
     },
     {
-        value: "Território Britânico do Oceano índico",
-        key: "IO"
+        "key": "do território britânico do oceano índico",
+        "value": "do território britânico do oceano índico",
+
+
     },
     {
-        value: "Territórios do Sul da França",
-        key: "TF"
+        "key": "do territórios do sul da frança",
+        "value": "do territórios do sul da frança",
+
+
     },
     {
-        value: "Timor-Leste",
-        key: "TL"
+        "key": "timorense",
+        "value": "timorense",
+
+
     },
     {
-        value: "Togo",
-        key: "TG"
+        "key": "togolesa",
+        "value": "togolesa",
+
+
     },
     {
-        value: "Tonga",
-        key: "TO"
+        "key": "tonganesa",
+        "value": "tonganesa",
+
+
     },
     {
-        value: "Trinidad e Tobago",
-        key: "TT"
+        "key": "trinitário-tobagense",
+        "value": "trinitário-tobagense",
+
+
     },
     {
-        value: "Tristão da Cunha",
-        key: "TA"
+        "key": "tristanita",
+        "value": "tristanita",
+
+
     },
     {
-        value: "Tunísia",
-        key: "TN"
+        "key": "tunisiana",
+        "value": "tunisiana",
+
+
     },
     {
-        value: "Turcomenistão",
-        key: "TM"
+        "key": "turcomana",
+        "value": "turcomana",
+
+
     },
     {
-        value: "Turquia",
-        key: "TR"
+        "key": "turca",
+        "value": "turca",
+
+
     },
     {
-        value: "Tuvalu",
-        key: "TV"
+        "key": "tuvaluana",
+        "value": "tuvaluana",
+
+
     },
     {
-        value: "Ucrânia",
-        key: "UA"
+        "key": "ucraniana",
+        "value": "ucraniana",
+
+
     },
     {
-        value: "Uganda",
-        key: "UG"
+        "key": "ugandense",
+        "value": "ugandense",
+
+
     },
     {
-        value: "Uruguai",
-        key: "UY"
+        "key": "uruguaia",
+        "value": "uruguaia",
+
+
     },
     {
-        value: "Uzbequistão",
-        key: "UZ"
+        "key": "uzbeque",
+        "value": "uzbeque",
+
+
     },
     {
-        value: "Vanuatu",
-        key: "VU"
+        "key": "vanuatuense",
+        "value": "vanuatuense",
+
+
     },
     {
-        value: "Vaticano",
-        key: "VA"
+        "key": "vaticano",
+        "value": "vaticano",
+
+
     },
     {
-        value: "Venezuela",
-        key: "VE"
+        "key": "venezuelana",
+        "value": "venezuelana",
+
+
     },
     {
-        value: "Vietnã",
-        key: "VN"
+        "key": "vietnamita",
+        "value": "vietnamita",
+
+
     },
     {
-        value: "Wallis e Futuna",
-        key: "WF"
+        "key": "wallis-futunense",
+        "value": "wallis-futunense",
+
+
     },
     {
-        value: "Zâmbia",
-        key: "ZM"
+        "key": "zambiana",
+        "value": "zambiana",
+
+
     },
     {
-        value: "Zimbábue",
-        key: "ZW"
+        "key": "zimbabuana",
+        "value": "zimbabuana",
+
+
     }
 ]

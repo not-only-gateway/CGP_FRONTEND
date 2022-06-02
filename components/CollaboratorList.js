@@ -37,11 +37,11 @@ export default function CollaboratorList() {
             equal: true, key: 'active', value: true, hidden: true
         }]
     }, [isADM])
-    const hook = useQuery(getQuery('collaborator'), filters)
-    useEffect(() => {
-        hook.clean()
-    }, [isADM])
-
+    const hook = useQuery(
+        getQuery('collaborator'),
+        [{asc: true, desc: false, key: 'name'}],
+        filters
+    )
 
     const {make} = useRequest(false)
     const keys = useMemo(() => {
@@ -142,7 +142,13 @@ function User({current, keys, setCurrent}) {
     const [reportData, setReportData] = useState('')
     const [birthMessage, setBirthMessage] = useState('')
     const isBirthDay = useMemo(() => {
-        return true
+        const date = new Date(current.birth)
+        const month = date.getUTCMonth() + 1;
+        const day = date.getUTCDate();
+        const dateObj = new Date();
+        const monthM = dateObj.getUTCMonth() + 1;
+        const dayM = dateObj.getUTCDate();
+        return month === monthM && day === dayM
     }, [])
     const themeProvider = useContext(ThemeContext)
     const ownProfile = useMemo(() => {
@@ -167,6 +173,16 @@ function User({current, keys, setCurrent}) {
             }
         ]
     }, [])
+    const {make} = useRequest(true)
+    const sendMail = (data) => {
+        make({
+            url: ENV.URLS.host + '/api/notification',
+            method: 'POST',
+            headers: {'authorization': (new Cookies()).get('jwt')},
+            data
+        })
+
+    }
     return (
         <Modal
             animationStyle={'slide-right'}
@@ -186,18 +202,37 @@ function User({current, keys, setCurrent}) {
                     />
                     <h2>{current?.name}</h2>
                     {current ?
-                        <DataRow
-                            keys={allKeys}
-                            asCard={true} selfContained={true}
-                            object={current}
-                            className={styles.selectedCard}
-                        />
+                        <>
+
+                            <fieldset className={styles.fieldSet}>
+                                <legend>Email</legend>
+                                <div>{current.email}</div>
+                            </fieldset>
+                            <fieldset className={styles.fieldSet}>
+                                <legend>Ramail</legend>
+                                <div>{current.extension}</div>
+                            </fieldset>
+                            <fieldset className={styles.fieldSet}>
+                                <legend>Cargo</legend>
+
+                                <div>{current.role}</div>
+                            </fieldset>
+                            <fieldset className={styles.fieldSet}>
+                                <legend>Unidade</legend>
+                                <div>{current.unit.name}</div>
+                            </fieldset>
+                            <fieldset className={styles.fieldSet}>
+                                <legend>Diretoria</legend>
+                                <div>{current.directory}</div>
+                            </fieldset>
+                        </>
                         :
                         undefined
                     }
                     <div className={styles.floating}>
                         {isBirthDay && !ownProfile ?
                             <Dropdown className={styles.report} hideArrow={true}
+                                      disabled={true}
                                       styles={{'--fabric-accent-color': '#ff5555'}}
                                       wrapperClassname={[styles.contentModal, themeProvider.dark ? styles.dark : styles.light].join(' ')}>
                                 <div className={styles.contentInput}>
@@ -224,9 +259,11 @@ function User({current, keys, setCurrent}) {
                                 </DropdownOptions>
                             </Dropdown> : null}
 
-                        {!ownProfile ?
-                            <Dropdown className={styles.report} hideArrow={true}
-                                      wrapperClassname={[styles.contentModal, themeProvider.dark ? styles.dark : styles.light].join(' ')}>
+                        {ownProfile ?
+                            <Dropdown
+                                className={styles.report} hideArrow={true}
+                                disabled={true}
+                                wrapperClassname={[styles.contentModal, themeProvider.dark ? styles.dark : styles.light].join(' ')}>
                                 <div className={styles.contentInput}>
                                     <span className={'material-icons-round'}>bug_report</span>
                                     Reportar erro no dado
@@ -244,7 +281,13 @@ function User({current, keys, setCurrent}) {
                                         className={styles.buttonDownload}
                                         disabled={reportData.length === 0}
                                         onClick={(e) => {
-
+                                            sendMail({
+                                                title: 'CAFE',
+                                                message: "CAFE",
+                                                footer: "CAFE",
+                                                sender: 'gustavo.roque@aeb.gov.br',
+                                                receiver: 'gustavo.roque@aeb.gov.br'
+                                            })
                                         }}>
                                         Enviar
                                     </Button>

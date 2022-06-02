@@ -166,6 +166,10 @@
 
 }
 
+.modalTab > h2 {
+    text-align: center;
+}
+
 .cardWrapper {
     max-width: 100%;
     height: fit-content;
@@ -201,13 +205,14 @@
 }
 
 
-.floating{
+.floating {
     position: absolute !important;
     bottom: 0;
     display: grid;
     gap: 2px;
     width: 100%;
 }
+
 .report {
     background: var(--fabric-border-primary) !important;
     width: 100%;
@@ -257,7 +262,8 @@
     align-items: center;
     gap: 4px;
 }
-.contentModal{
+
+.contentModal {
     padding: 4px 16px;
     min-width: 250px !important;
     width: 250px !important;
@@ -302,4 +308,22 @@
 
     --fabric-boxshadow: rgba(0, 0, 0, .2) 2px 4px 10px 2px;
 
+}
+
+.fieldSet {
+    width: 100%;
+    border-radius: 5px;
+    border: var(--fabric-border-primary) 1px solid;
+    font-family: "Roboto";
+}
+
+.fieldSet > legend {
+    font-weight: 550;
+    font-size: .75rem;
+}
+
+.fieldSet > div {
+    font-family: "Roboto";
+    /*font-weight: 550;*/
+    font-size: .95rem;
 }

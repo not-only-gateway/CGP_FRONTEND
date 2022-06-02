@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93af5948-4d25-4a59-8c24-1a4da7664696" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ext/mail/sendMail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/CollaboratorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CollaboratorList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext" beforeDir="false" afterPath="$PROJECT_DIR$/ext" afterDir="false" />
@@ -13,12 +14,8 @@
       <change beforePath="$PROJECT_DIR$/ext/nav/NavigationGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/nav/NavigationGroup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/Wrapper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/wrapper/components/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/components/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/KEYS.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/KEYS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forms/COLLABORATOR.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms/COLLABORATOR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/NATIONALITIES.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NATIONALITIES.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +92,9 @@
       <workItem from="1653662001759" duration="273000" />
       <workItem from="1653662397843" duration="2521000" />
       <workItem from="1653908650761" duration="20167000" />
-      <workItem from="1654009720964" duration="1936000" />
+      <workItem from="1654009720964" duration="2335000" />
+      <workItem from="1654012163411" duration="199000" />
+      <workItem from="1654175781307" duration="2123000" />
     </task>
     <servers />
   </component>
@@ -112,5 +111,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/CollaboratorList.js</url>
+          <line>138</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
