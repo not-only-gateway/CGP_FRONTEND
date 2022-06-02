@@ -137,7 +137,14 @@ export const KEYS = {
             type: 'date',
             label: 'Data de admissão',
             visible: false
-        }, {key: 'extension', type: 'string', label: 'Ramal', visible: true}, {
+        },
+        {
+            key: 'extension', type: 'number', label: 'Ramal', visible: true,
+            method: (setColor, key, object, card) => {
+                return object ? `(61) 2033-${object[key.key]}` : 'Vazio'
+            }
+
+        }, {
             key: 'personal_email',
             type: 'string',
             label: 'Email pessoal',
@@ -202,8 +209,12 @@ export const KEYS = {
             }
         },
 
-
-        {key: 'extension', type: 'string', label: 'Ramal', visible: true},
+        {
+            key: 'extension', type: 'number', label: 'Ramal', visible: true,
+            method: (setColor, key, object, card) => {
+                return object ? `(61) 2033-${object[key.key]}` : 'Vazio'
+            }
+        },
         {key: 'email', type: 'string', label: 'Email', visible: true},
         {
             key: 'unit',
@@ -211,7 +222,12 @@ export const KEYS = {
             subfieldKey: 'acronym',
             label: 'Unidade',
             visible: true,
-            query: {...getQuery('unit'), keys: unit, primaryKey: 'acronym'}
+            query: {...getQuery('unit'), keys: unit, primaryKey: 'acronym'},
+
+            // method: (setColor, key, object, card) => {
+            //     return object && object[key.key] ? `${object[key.key]?.acronym} - ${object[key.key].name}` : 'Vazio'
+            // }
+
         },
         {
             key: 'role',
