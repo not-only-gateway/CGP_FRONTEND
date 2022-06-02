@@ -155,24 +155,7 @@ function User({current, keys, setCurrent}) {
         const e = localStorage.getItem('email')
         return current && e !== null && current.email.toLowerCase().trim() === e.toLowerCase().trim()
     }, [current])
-    const allKeys = useMemo(() => {
-        return [
-            ...keys.filter(k => k.key !== 'image'),
-            {
-                key: 'unit',
-                type: 'object',
-                subfieldKey: 'name',
-                label: 'Nome unidade',
-                visible: true
-            },
-            {
-                key: 'directory',
-                type: 'string',
-                label: 'Diretoria',
-                visible: true
-            }
-        ]
-    }, [])
+
     const {make} = useRequest(true)
     const sendMail = (data) => {
         make({
@@ -210,21 +193,20 @@ function User({current, keys, setCurrent}) {
                             </fieldset>
                             <fieldset className={styles.fieldSet}>
                                 <legend>Ramail</legend>
-                                <div>{current.extension}</div>
+                                <div>{current.extension ? current.extension : 'Não informado'}</div>
                             </fieldset>
                             <fieldset className={styles.fieldSet}>
                                 <legend>Cargo</legend>
-
-                                <div>{current.role}</div>
+                                <div>{current.role ? current.role : 'Não informado'}</div>
                             </fieldset>
-                            <fieldset className={styles.fieldSet}>
+                            {current.unit ? <fieldset className={styles.fieldSet}>
                                 <legend>Unidade</legend>
                                 <div>{current.unit.name}</div>
-                            </fieldset>
-                            <fieldset className={styles.fieldSet}>
+                            </fieldset> : null}
+                            {current.directory ? <fieldset className={styles.fieldSet}>
                                 <legend>Diretoria</legend>
                                 <div>{current.directory}</div>
-                            </fieldset>
+                            </fieldset> : null}
                         </>
                         :
                         undefined
@@ -296,7 +278,7 @@ function User({current, keys, setCurrent}) {
 
                     </div>
                 </Tab>
-                <Tab label={'Cartão virtual'} className={styles.modalTab}>
+                <Tab label={'Cartão virtual'} disabled={!current.role || !current.extension} className={styles.modalTab}>
                     <fieldset className={styles.qrCode}>
                         <legend>Cartão virtual</legend>
                         <div ref={canvasRef} className={styles.cardWrapper}>

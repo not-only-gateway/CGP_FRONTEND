@@ -141,7 +141,7 @@ export const KEYS = {
         {
             key: 'extension', type: 'number', label: 'Ramal', visible: true,
             method: (setColor, key, object, card) => {
-                return object ? `(61) 2033-${object[key.key]}` : 'Vazio'
+                return object && object[key.key] ? `(61) 2033-${object[key.key]}` : 'Vazio'
             }
 
         }, {
@@ -212,8 +212,9 @@ export const KEYS = {
         {
             key: 'extension', type: 'number', label: 'Ramal', visible: true,
             method: (setColor, key, object, card) => {
-                return object ? `(61) 2033-${object[key.key]}` : 'Vazio'
+                return object && object[key.key] ? `(61) 2033-${object[key.key]}` : 'Vazio'
             }
+
         },
         {key: 'email', type: 'string', label: 'Email', visible: true},
         {
