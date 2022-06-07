@@ -42,37 +42,39 @@ export const KEYS = {
 
     COMMISSIONED: comiss,
     EFFECTIVE: effec,
-    VACANCY: [{
-        key: 'commissioned',
-        type: 'object',
-        label: 'Cargo comissionado',
-        visible: true,
-        subfieldKey: 'name',
-        subType: 'string',
-        query: {...getQuery('commissioned'), keys: comiss, primaryKey: 'id'}
-    }, {
-        key: 'unit',
-        type: 'object',
-        label: 'Unidade',
-        visible: true,
-        subfieldKey: 'acronym',
-        subType: 'string',
-        query: {...getQuery('unit'), keys: unit, primaryKey: 'acronym'}
-    }, {
-        key: 'holder',
-        type: 'object',
-        label: 'Titular',
-        visible: true,
-        subfieldKey: 'name',
-        query: {...getQuery('collaborator'), keys: collab, primaryKey: 'id'}
-    }, {
-        key: 'substitute',
-        type: 'object',
-        label: 'Substituto',
-        visible: true,
-        subfieldKey: 'name',
-        query: {...getQuery('collaborator'), keys: collab, primaryKey: 'id'}
-    },
+    VACANCY: [
+        {
+            key: 'commissioned',
+            type: 'object',
+            label: 'Cargo comissionado',
+            visible: true,
+            subfieldKey: 'name',
+            subType: 'string',
+            query: {...getQuery('commissioned'), keys: comiss, primaryKey: 'id'}
+        },
+        {
+            key: 'unit',
+            type: 'object',
+            label: 'Unidade',
+            visible: true,
+            subfieldKey: 'acronym',
+            subType: 'string',
+            query: {...getQuery('unit'), keys: unit, primaryKey: 'acronym'}
+        }, {
+            key: 'holder',
+            type: 'object',
+            label: 'Titular',
+            visible: true,
+            subfieldKey: 'name',
+            query: {...getQuery('collaborator'), keys: collab, primaryKey: 'id'}
+        }, {
+            key: 'substitute',
+            type: 'object',
+            label: 'Substituto',
+            visible: true,
+            subfieldKey: 'name',
+            query: {...getQuery('collaborator'), keys: collab, primaryKey: 'id'}
+        },
 
         {key: 'nomef', type: 'string', label: 'Nome feminino', visible: false},
         {

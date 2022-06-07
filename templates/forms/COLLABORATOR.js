@@ -59,6 +59,7 @@ export const COLLABORATOR = [{
             disabled: false,
             key: 'superior',
             width: '100%',
+
             query: getQuery('collaborator'),
             keys: KEYS.COLLABORATOR_SIMPLE
         },

@@ -11,11 +11,14 @@ function MyApp({Component, pageProps}) {
             'auth': 'SIS-AEB | Entrar'
         }}
         host={ENV.URLS.auth_host}
-        pages={[{label: 'Início', path: '/admin', requireAuth: true, requireAdmin: true}, {label: 'Ramais', path: '/', requireAuth: false}]}
+        pages={[
+            {label: 'Início', path: '/admin', requireAuth: true, requireAdmin: true},
+            {label: 'Ramais', path: '/', requireAuth: false},
+            {label: 'Unidades', path: '/unidades', requireAuth: false}
+        ]}
     >
-        <div style={{paddingTop: '8px'}}>
-            <Component {...pageProps}/>
-        </div>
+
+        <Component {...pageProps}/>
     </Wrapper>)
 }
 

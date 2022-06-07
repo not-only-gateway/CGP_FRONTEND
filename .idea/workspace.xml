@@ -7,7 +7,13 @@
     <list default="true" id="93af5948-4d25-4a59-8c24-1a4da7664696" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/CollaboratorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CollaboratorList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/wrapper/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/components/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/wrapper/styles/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/styles/Profile.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/wrapper/styles/Wrapper.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/styles/Wrapper.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/KEYS.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/KEYS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/forms/COLLABORATOR.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms/COLLABORATOR.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -38,27 +45,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gustavo.roque/Documents/frontend/public&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/gustavo.roque/Documents/frontend/pages",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gustavo.roque\Documents\frontend\pages" />
+      <recent name="C:\Users\gustavo.roque\Documents\frontend\components" />
       <recent name="C:\Users\gustavo.roque\Documents\frontend\public" />
       <recent name="C:\Users\gustavo.roque\Desktop\CGP\frontend-cgp\pages" />
       <recent name="C:\Users\gustavo.roque\Desktop\CGP\frontend-cgp\core\src\visualization" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gustavo.roque\Documents\frontend\components\tree" />
       <recent name="C:\Users\gustavo.roque\Documents\frontend\public" />
       <recent name="C:\Users\gustavo.roque\Desktop\CGP\frontend-cgp\ext" />
     </key>
@@ -88,7 +100,11 @@
       <workItem from="1654012163411" duration="199000" />
       <workItem from="1654175781307" duration="2253000" />
       <workItem from="1654178415133" duration="418000" />
-      <workItem from="1654179585478" duration="267000" />
+      <workItem from="1654179585478" duration="453000" />
+      <workItem from="1654262362795" duration="5102000" />
+      <workItem from="1654527337403" duration="2755000" />
+      <workItem from="1654599346669" duration="220000" />
+      <workItem from="1654605437835" duration="1921000" />
     </task>
     <servers />
   </component>
@@ -105,16 +121,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/components/CollaboratorList.js</url>
-          <line>138</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
