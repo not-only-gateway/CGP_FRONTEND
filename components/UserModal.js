@@ -25,7 +25,6 @@ END:VCARD`
 
 export default function UserModal(props) {
     const {current, setCurrent} = props
-    const alert = useContext(AlertProvider)
     const ref = useCallback(node => {
         if (node)
             QRCode.toCanvas(node, getVCARD(current.name, current.email, current.extension), (err) => console.log(err))

@@ -6,14 +6,23 @@ export default function Node(props) {
    return (
 
       <li>
-         <span><div className={styles.node}>{props.content}</div></span>
+         <span
+             onClick={() => {
+                if (props.onClick)
+                   props.onClick()
+             }}
+         ><div className={styles.node}>{props.content}</div></span>
 
          {props.subNodes.length > 0 ?
             <ul>
                {props.subNodes?.map((m, i) => (
                   <React.Fragment key={i + '-element-' + props.wrapperKey}>
-                     <Node subNodes={m.subNodes} content={m.content} isRoot={false} wrapperKey={props.wrapperKey}
-                           index={props.index + 1}/>
+                     <Node
+                         subNodes={m.subNodes}
+                         onClick={m.onClick}
+                           content={m.content} isRoot={false} wrapperKey={props.wrapperKey}
+                           index={props.index + 1}
+                     />
                   </React.Fragment>
                ))}
             </ul>
@@ -25,6 +34,7 @@ export default function Node(props) {
    )
 }
 Node.propTypes = {
+   onClick: PropTypes.func,
    wrapperKey: PropTypes.string.isRequired,
    isRoot: PropTypes.bool,
    content: PropTypes.node,

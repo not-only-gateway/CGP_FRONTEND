@@ -1,7 +1,41 @@
-.wrapper{
-    overflow-y: hidden;
-    overflow-x: auto;
-    background: var(--fabric-background-tertiary);
-    height: 100%;
+.wrapper {
+    overflow: hidden;
+
+    padding: 12px 32px;
+
+}
+
+.headerWrapper {
+    color: var(--fabric-color-secondary);
+    display: flex;
+    gap: 32px;
+
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.header {
+    margin: 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.tabs {
+    display: flex;
+    gap: 8px;
+    max-height: 100%;
+
+}
+
+.tab {
+    display: grid;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
 
 }

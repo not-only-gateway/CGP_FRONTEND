@@ -4,16 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93af5948-4d25-4a59-8c24-1a4da7664696" name="Changes" comment="">
+    <list default="true" id="b2eb36cb-134f-415a-9f05-5f4c6fb9f680" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/frontend-cgp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CollaboratorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CollaboratorList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Collaborators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UnitList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UnitList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/tree/TreeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/tree/TreeView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/tree/styles/TreeView.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/tree/styles/TreeView.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/tree/utils/Node.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/tree/utils/Node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext" beforeDir="false" afterPath="$PROJECT_DIR$/ext" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/wrapper/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/components/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/wrapper/styles/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/styles/Profile.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/wrapper/styles/Wrapper.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/styles/Wrapper.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/KEYS.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/KEYS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forms/COLLABORATOR.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms/COLLABORATOR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/unidades.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Units.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Unit.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Unit.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,21 +33,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MacroExpansionManager">
-    <option name="directoryName" value="zakqk6gz" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="29bqHstLTIOp1MVSgpQLww5cTL2" />
+  <component name="ProjectId" id="2AIL94tKdmzPA8iDTVaGQGBK3Lz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -45,66 +52,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/gustavo.roque/Documents/frontend/pages",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\gustavo.roque\Documents\frontend\pages" />
-      <recent name="C:\Users\gustavo.roque\Documents\frontend\components" />
-      <recent name="C:\Users\gustavo.roque\Documents\frontend\public" />
-      <recent name="C:\Users\gustavo.roque\Desktop\CGP\frontend-cgp\pages" />
-      <recent name="C:\Users\gustavo.roque\Desktop\CGP\frontend-cgp\core\src\visualization" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gustavo.roque\Documents\frontend\components\tree" />
-      <recent name="C:\Users\gustavo.roque\Documents\frontend\public" />
-      <recent name="C:\Users\gustavo.roque\Desktop\CGP\frontend-cgp\ext" />
+      <recent name="C:\Users\gustavo.roque\Documents\frontend\components" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="93af5948-4d25-4a59-8c24-1a4da7664696" name="Changes" comment="" />
-      <created>1653392050858</created>
+      <changelist id="b2eb36cb-134f-415a-9f05-5f4c6fb9f680" name="Changes" comment="" />
+      <created>1654692000754</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1653392050858</updated>
-      <workItem from="1653392052628" duration="925000" />
-      <workItem from="1653400252736" duration="6480000" />
-      <workItem from="1653477315611" duration="6879000" />
-      <workItem from="1653486875086" duration="1110000" />
-      <workItem from="1653567908070" duration="300000" />
-      <workItem from="1653568217975" duration="7346000" />
-      <workItem from="1653578012847" duration="1095000" />
-      <workItem from="1653653882791" duration="3291000" />
-      <workItem from="1653657957726" duration="2296000" />
-      <workItem from="1653660631568" duration="636000" />
-      <workItem from="1653662001759" duration="273000" />
-      <workItem from="1653662397843" duration="2521000" />
-      <workItem from="1653908650761" duration="20167000" />
-      <workItem from="1654009720964" duration="2335000" />
-      <workItem from="1654012163411" duration="199000" />
-      <workItem from="1654175781307" duration="2253000" />
-      <workItem from="1654178415133" duration="418000" />
-      <workItem from="1654179585478" duration="453000" />
-      <workItem from="1654262362795" duration="5102000" />
-      <workItem from="1654527337403" duration="2755000" />
-      <workItem from="1654599346669" duration="220000" />
-      <workItem from="1654605437835" duration="1921000" />
+      <updated>1654692000754</updated>
+      <workItem from="1654692003874" duration="1411000" />
+      <workItem from="1654695882307" duration="614000" />
+      <workItem from="1654779585447" duration="9000" />
+      <workItem from="1654781575670" duration="120000" />
+      <workItem from="1654782389143" duration="798000" />
+      <workItem from="1655119745071" duration="8023000" />
     </task>
     <servers />
   </component>

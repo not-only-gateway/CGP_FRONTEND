@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import PropTypes from "prop-types";
 import {Switcher} from "@f-ui/core";
 import getQuery from "../utils/getQuery";
@@ -12,8 +12,47 @@ import ENV from "../env";
 
 export default function UnitList(props) {
     const [current, setCurrent] = useState()
-    const hook = useQuery(getQuery('unit'))
+    const hook = useQuery(getQuery('unit'), [], props.unit ? [{
+        equal: true, key: "parent_unit", value: props.unit, hidden: true
+    }] : [])
     const {make} = useRequest(true)
+
+
+
+    const list = (
+        <List
+            options={[{
+                label: 'Deletar',
+
+                validadeChoice: true,
+                validationMessage: 'Tem certeza ?',
+
+                icon: <span className={'material-icons-round'}>delete_forever</span>,
+                onClick: (e) => {
+                    make({
+                        url: ENV.URLS.host + '/api/unit/' + e.id,
+                        method: 'delete',
+                        headers: {'authorization': (new Cookies()).get('jwt')}
+                    })
+                        .then(() => hook.clean())
+                        .catch()
+                }
+            }]}
+            hook={hook}
+            createOption={!props.unit}
+            onCreate={() => setCurrent({})}
+            keys={KEYS.UNIT}
+            onRowClick={e => {
+                if(props.unit)
+                    props.redirect("/unit?id="+e.acronym)
+                setCurrent(e)
+            }}
+            title={'Unidades'}
+        />
+    )
+
+    if (props.unit)
+        return list
     return (
         <Switcher openChild={current ? 0 : 1} className={styles.wrapper}>
             <FormTemplate
@@ -37,38 +76,15 @@ export default function UnitList(props) {
                     }).catch()
                 }}
             />
-            <List
-                options={[{
-                    label: 'Deletar',
-
-                    validadeChoice: true,
-                    validationMessage: 'Tem certeza ?',
-
-                    icon: <span className={'material-icons-round'}>delete_forever</span>,
-                    onClick: (e) => {
-                        make({
-                            url: ENV.URLS.host + '/api/unit/' + e.id,
-                            method: 'delete',
-                            headers: {'authorization': (new Cookies()).get('jwt')}
-                        })
-                            .then(() => hook.clean())
-                            .catch()
-                    }
-                }]}
-                hook={hook}
-                createOption={true}
-                onCreate={() => setCurrent({})}
-                keys={KEYS.UNIT}
-                onRowClick={e => setCurrent(e)}
-                title={'Unidades'}
-            />
-
+            {list}
         </Switcher>)
 
 }
 
 UnitList.propTypes = {
+    redirect: PropTypes.func,
     handleClose: PropTypes.func,
     create: PropTypes.bool,
-    data: PropTypes.object
+    data: PropTypes.object,
+    unit: PropTypes.string
 }

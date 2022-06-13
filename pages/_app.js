@@ -8,16 +8,15 @@ function MyApp({Component, pageProps}) {
         titles={{
             '/admin': 'SIS-AEB',
             '/': 'SIS-AEB | Ramais',
-            'auth': 'SIS-AEB | Entrar'
+            'auth': 'SIS-AEB | Entrar',
+            "/unit": "SIS-AEB | Unidade"
         }}
         host={ENV.URLS.auth_host}
         pages={[
             {label: 'Início', path: '/admin', requireAuth: true, requireAdmin: true},
-            {label: 'Ramais', path: '/', requireAuth: false},
-            {label: 'Unidades', path: '/unidades', requireAuth: false}
+            {label: 'Ramais', path: '/', requireAuth: false}
         ]}
     >
-
         <Component {...pageProps}/>
     </Wrapper>)
 }
