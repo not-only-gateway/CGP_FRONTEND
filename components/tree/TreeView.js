@@ -98,7 +98,7 @@ export default function TreeView(props) {
             </div>
             <div className={styles.scaleWrapper}>
                 <Button styles={{background: "var(--fabric-border-primary)"}}  className={styles.button}  onClick={() => setScale(prev => (prev + .25) > 3 ? 3 : prev + .25)} disabled={scale === 3}>
-                    <span className="material-icons-round">
+                    <span style={{fontSize: "1.1rem"}}  className="material-icons-round">
                         add
                     </span>
                 </Button>
@@ -106,7 +106,7 @@ export default function TreeView(props) {
                     {scale.toFixed(0)}
                 </div>
                 <Button styles={{background: "var(--fabric-border-primary)"}} className={styles.button} onClick={() => setScale(prev => (prev - .25) < .25 ? .25 : prev - .25)} disabled={scale === .25}>
-                    <span className="material-icons-round">
+                    <span style={{fontSize: "1.1rem"}} className="material-icons-round">
                         remove
                     </span>
                 </Button>

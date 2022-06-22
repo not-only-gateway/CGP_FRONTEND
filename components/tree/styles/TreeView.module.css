@@ -144,8 +144,8 @@
 }
 
 .button {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     padding: 0 !important;
     display: flex;
     align-items: center;
@@ -153,7 +153,8 @@
 }
 
 .currentScale {
+    font-size: .8rem;
     text-align: center;
-    width: 35px;
+    width: 25px;
     color: var(--fabric-color-secondary);
 }

@@ -32,17 +32,6 @@ export default function Unit() {
     return (
         <div className={styles.wrapper}>
             <div className={styles.headerWrapper}>
-                <Button
-                    variant={"filled"}
-                    onClick={() => router.push("/unit?id=" + unit.parent_unit.acronym)}
-                    className={styles.button}
-                    styles={{   padding: "4px"}}
-                >
-                    <ToolTip content={"Retornar para ramais"}/>
-                    <span style={{fontSize: "1.2rem"}} className={"material-icons-round"}>
-                        chevron_left
-                    </span>
-                </Button>
                 <h2 className={styles.header}>
                     {unit.name}
                 </h2>
