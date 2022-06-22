@@ -4,27 +4,27 @@ import {useRequest} from "@f-ui/query";
 import pages from "../public/page.json"
 import {useRouter} from "next/router";
 import Cookies from "universal-cookie/lib";
-import {Button, Tab, ToolTip, VerticalTabs} from "@f-ui/core";
+import {Button, Icon, Tab, Tabs} from "@f-ui/core";
 import Collaborators from "../components/Collaborators";
 import UnitList from "../components/UnitList";
+import axios from "axios";
 
 export default function Unit() {
     const [open, setOpen] = useState(0)
     const [unit, setUnit] = useState()
     const router = useRouter()
-    const {make} = useRequest(false)
     useEffect(() => {
         setOpen(0)
         setUnit(undefined)
-        make({
+        axios({
             url: pages.host + "/api/unit/" + router.query.id,
             headers: {authorization: (new Cookies()).get("jwt")}
-        }, false)
+        })
             .then(res => {
                 if (res)
                     setUnit(res.data)
             })
-            .catch()
+            .catch(err => console.error(err))
     }, [router.query])
 
     if (!unit)
@@ -37,27 +37,28 @@ export default function Unit() {
                 </h2>
                 {unit.parent_unit ?
                     <Button
-                        variant={"outlined"}
+                        variant={"filled"}
                         onClick={() => router.push("/unit?id=" + unit.parent_unit.acronym)}
                         className={styles.button}
-                        styles={{ padding: "4px 16px", background: "var(--fabric-border-primary)"}}
                     >
                         Ir para {unit.parent_unit.acronym}
-                        <span style={{fontSize: "1.2rem"}} className={"material-icons-round"}>
-                            open_in_new
-                        </span>
+                        <Icon styles={{fontSize: "1.2rem"}}>
+                            arrow_upward
+                        </Icon>
                     </Button>
                     : null}
             </div>
-            <VerticalTabs open={open} setOpen={setOpen} className={styles.tabs}>
-                <Tab label={"Colaboradores"} className={styles.tab}>
-                    <Collaborators unit={router.query.id}/>
-                </Tab>
-                <Tab label={"Unidades subordinadas"} className={styles.tab}>
-                    <UnitList unit={unit.acronym} redirect={router.push}/>
-                </Tab>
-
-            </VerticalTabs>
+            {unit?.acronym ?
+                <Tabs open={open} setOpen={setOpen} headerClassName={styles.listHeader} className={styles.tabs}>
+                    <Tab label={"Colaboradores"} className={styles.tab}>
+                        <Collaborators unit={unit.acronym}/>
+                    </Tab>
+                    <Tab label={"Unidades subordinadas"} className={styles.tab}>
+                        <UnitList unit={unit.acronym} redirect={router.push}/>
+                    </Tab>
+                </Tabs>
+                :
+                null}
         </div>
     )
 }

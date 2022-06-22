@@ -1,6 +1,6 @@
 import React, {useCallback, useContext, useMemo, useRef, useState} from "react";
 import PropTypes from "prop-types";
-import {AlertProvider, Button, Dropdown, DropdownOptions, Modal, Tab, Tabs, TextField, ThemeContext} from "@f-ui/core";
+import {Button, Dropdown, DropdownOptions, Icon, Modal, Tab, Tabs, TextField, ThemeContext} from "@f-ui/core";
 import styles from "../styles/Home.module.css";
 
 import {Avatar, useRequest} from "@f-ui/query";
@@ -110,7 +110,7 @@ export default function UserModal(props) {
                                       styles={{'--fabric-accent-color': '#ff5555'}}
                                       wrapperClassname={[styles.contentModal, themeProvider.dark ? styles.dark : styles.light].join(' ')}>
                                 <div className={styles.contentInput}>
-                                    <span style={{color: '#ff5555'}} className={'material-icons-round'}>cake</span>
+                                    <Icon styles={{color: '#ff5555'}}>cake</Icon>
                                     Parabenizar aniversariante
                                 </div>
                                 <DropdownOptions>
@@ -139,7 +139,7 @@ export default function UserModal(props) {
                                 disabled={true}
                                 wrapperClassname={[styles.contentModal, themeProvider.dark ? styles.dark : styles.light].join(' ')}>
                                 <div className={styles.contentInput}>
-                                    <span className={'material-icons-round'}>bug_report</span>
+                                    <Icon>bug_report</Icon>
                                     Reportar erro no dado
                                 </div>
                                 <DropdownOptions>
@@ -201,7 +201,7 @@ export default function UserModal(props) {
                         <Button
                             variant={"filled"}
                             className={styles.buttonDownload}
-                            onClick={(e) => {
+                            onClick={( ) => {
                                 html2canvas(canvasRef.current, {scale: 4, backgroundColor: null}).then(canvas => {
                                     document.body.appendChild(canvas);
                                     const element = document.createElement('a');
@@ -213,8 +213,7 @@ export default function UserModal(props) {
                                     document.body.removeChild(element);
                                 })
                             }}>
-                                <span className={'material-icons-round'}
-                                      style={{fontSize: '1.1rem'}}>file_download</span>
+                                <Icon styles={{fontSize: '1.1rem'}}>file_download</Icon>
                             Download
                         </Button>
                     </fieldset>
@@ -232,8 +231,7 @@ export default function UserModal(props) {
                                     element.click();
                                     document.body.removeChild(element);
                                 }}>
-                                <span className={'material-icons-round'}
-                                      style={{fontSize: '1.1rem'}}>file_download</span>
+                                <Icon styles={{fontSize: '1.1rem'}}>file_download</Icon>
                             Download
                         </Button>
                     </fieldset>

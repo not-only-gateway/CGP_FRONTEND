@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
-import {Switcher} from "@f-ui/core";
+import {Icon, Switcher} from "@f-ui/core";
 import getQuery from "../utils/getQuery";
 import {KEYS} from "../templates/KEYS";
 import styles from "../styles/Home.module.css";
@@ -17,8 +17,6 @@ export default function UnitList(props) {
     }] : [])
     const {make} = useRequest(true)
 
-
-
     const list = (
         <List
             options={[{
@@ -27,7 +25,7 @@ export default function UnitList(props) {
                 validadeChoice: true,
                 validationMessage: 'Tem certeza ?',
 
-                icon: <span className={'material-icons-round'}>delete_forever</span>,
+                icon: <Icon>delete_forever</Icon>,
                 onClick: (e) => {
                     make({
                         url: ENV.URLS.host + '/api/unit/' + e.id,

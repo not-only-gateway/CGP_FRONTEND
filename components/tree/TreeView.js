@@ -1,10 +1,9 @@
-import React from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import PropTypes from "prop-types";
 import styles from './styles/TreeView.module.css'
-import {useEffect, useLayoutEffect, useMemo, useRef, useState} from "react";
 import {v4} from 'uuid';
 import Node from "./utils/Node";
-import {Button} from "@f-ui/core";
+import {Button, Icon} from "@f-ui/core";
 
 const RIGHT_BUTTON = 2
 const KEY = v4()
@@ -98,17 +97,17 @@ export default function TreeView(props) {
             </div>
             <div className={styles.scaleWrapper}>
                 <Button styles={{background: "var(--fabric-border-primary)"}}  className={styles.button}  onClick={() => setScale(prev => (prev + .25) > 3 ? 3 : prev + .25)} disabled={scale === 3}>
-                    <span style={{fontSize: "1.1rem"}}  className="material-icons-round">
+                    <Icon styles={{fontSize: "1.1rem"}}>
                         add
-                    </span>
+                    </Icon>
                 </Button>
                 <div className={styles.currentScale}>
                     {scale.toFixed(0)}
                 </div>
                 <Button styles={{background: "var(--fabric-border-primary)"}} className={styles.button} onClick={() => setScale(prev => (prev - .25) < .25 ? .25 : prev - .25)} disabled={scale === .25}>
-                    <span style={{fontSize: "1.1rem"}} className="material-icons-round">
+                    <Icon styles={{fontSize: "1.1rem"}}>
                         remove
-                    </span>
+                    </Icon>
                 </Button>
             </div>
         </div>

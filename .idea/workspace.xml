@@ -5,14 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2eb36cb-134f-415a-9f05-5f4c6fb9f680" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CollaboratorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CollaboratorList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Collaborators.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Collaborators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CommissionedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CommissionedList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/EffectiveList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EffectiveList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SimpleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SimpleList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UnitList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UnitList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Units.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Units.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/VacancyList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/VacancyList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/tree/TreeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/tree/TreeView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/tree/styles/TreeView.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/tree/styles/TreeView.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/tree/utils/Node.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/tree/utils/Node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext" beforeDir="false" afterPath="$PROJECT_DIR$/ext" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/wrapper/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/components/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/wrapper/styles/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/styles/Profile.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/wrapper/styles/Wrapper.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/wrapper/styles/Wrapper.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/unit.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/unit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Unit.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Unit.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,22 +57,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gustavo.roque\Documents\frontend\query\src\hooks" />
       <recent name="C:\Users\gustavo.roque\Documents\frontend\components" />
     </key>
   </component>
@@ -76,7 +94,7 @@
       <workItem from="1655119745071" duration="8135000" />
       <workItem from="1655727756058" duration="347000" />
       <workItem from="1655828434676" duration="775000" />
-      <workItem from="1655896090421" duration="201000" />
+      <workItem from="1655896090421" duration="12141000" />
     </task>
     <servers />
   </component>

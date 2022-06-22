@@ -1,35 +1,25 @@
-import React, {useContext, useEffect, useMemo, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import PropTypes from "prop-types";
-import {Switcher, Tab, Tabs} from "@f-ui/core";
 import getQuery from "../utils/getQuery";
 import {KEYS} from "../templates/KEYS";
-import styles from "../styles/Home.module.css";
 
-import {List, useQuery, useRequest} from "@f-ui/query";
-import FormTemplate from "../ext/FormTemplate";
-import {COLLABORATOR} from "../templates/forms/COLLABORATOR";
-import Cookies from "universal-cookie/lib";
-import AdminContext from "../ext/wrapper/AdminContext";
-import ENV from "../env";
+import {List, useQuery} from "@f-ui/query";
 import UserModal from "./UserModal";
 
 
 export default function Collaborators(props) {
     const {isBirthdays} = props
     const [current, setCurrent] = useState()
-    const base = {
-        equal: true, key: 'active', value: true, hidden: true
-    }
+
+
     const hook = useQuery(
         getQuery(isBirthdays ? 'birthdays/collaborator' : 'collaborator'),
         [{asc: true, desc: false, key: 'name'}],
-        props.unit ? [base, {
-                equal: true, key: 'unit', value: props.unit, hidden: true
-            }]
-            :
-            [base]
+        props.unit ?
+            [{equal: true, key: 'active', value: true, hidden: true}, {equal: true, key: 'unit', value: props.unit, hidden: true}]
+                :
+            [{equal: true, key: 'active', value: true, hidden: true}]
     )
-
 
     return (
         <>

@@ -1,41 +1,52 @@
 .wrapper {
     overflow: hidden;
-
-    padding: 12px 32px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 10%;
 
 }
 
 .headerWrapper {
     color: var(--fabric-color-secondary);
     display: flex;
-    gap: 32px;
+    justify-content: space-between;
 
     align-items: center;
-    margin-bottom: 16px;
+    background: var(--fabric-border-primary);
+    padding: 8px;
+
+    border-radius: 5px 5px 0 0;
 }
 
 .header {
     margin: 0;
+    font-size: 1.1rem;
+    height: fit-content;
 }
 
 .button {
     display: flex;
     align-items: center;
     gap: 8px;
-}
-.tabs {
-    display: flex;
-    gap: 8px;
-    max-height: 100%;
+    padding: 4px 8px !important;
+    font-size: .7rem !important;
 
 }
+
 
 .tab {
-    display: grid;
     max-width: 100%;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
+}
 
-
+.listHeader {
+    background: var(--fabric-border-primary) !important;
+    border-radius: 0 0 5px 5px;
+    padding: 0 8px;
+    font-weight: normal;
+}
+.tabs{
+    display: grid;
+    overflow: hidden;
 }

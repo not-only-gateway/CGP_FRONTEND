@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import PropTypes from "prop-types";
-import {Switcher} from "@f-ui/core";
+import {Icon, Switcher} from "@f-ui/core";
 import getQuery from "../utils/getQuery";
 import styles from "../styles/Home.module.css";
 import {KEYS} from "../templates/KEYS";
@@ -41,7 +41,7 @@ export default function CommissionedList(props) {
                     validadeChoice: true,
                     validationMessage: 'Tem certeza ?',
 
-                    icon: <span className={'material-icons-round'}>delete_forever</span>,
+                    icon: <Icon>delete_forever</Icon>,
                     onClick: (e) => {
                         console.log(e)
                         make({
